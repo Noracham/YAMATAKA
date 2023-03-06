@@ -31,6 +31,10 @@ a {
   max-width: 1100px;
 }
 
+.flex {
+  display: flex;
+}
+
 .flex_column {
   display: flex;
   flex-direction: column;
@@ -86,7 +90,7 @@ a {
 /*---------- hero ----------*/
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh + 15px);
   background-image: url(../../img/hero.jpg);
   background-position: center;
   background-size: cover;
@@ -109,9 +113,90 @@ a {
   left: 3%;
 }
 .hero_txt h1 {
-  font-size: 4.5rem;
+  font-size: 5.8rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   color: #fff;
   text-shadow: #222222 0 3px 6px;
+}
+.hero_info {
+  bottom: 3%;
+  right: 2%;
+  box-shadow: rgba(0, 0, 0, 0.2549019608) 7px 7px 7px;
+  width: 360px;
+  height: 360px;
+  padding: 23px 30px;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  z-index: 3;
+  align-items: center;
+}
+.hero_info_time:not(:first-child) {
+  margin-top: 5px;
+}
+.hero_info_time p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4f6a20;
+}
+.hero_info_time_txt {
+  width: 290px;
+  text-align: center;
+  padding: 16px 20px;
+  background: #1b5d00;
+  border-radius: 50px;
+}
+.hero_info_time_txt p {
+  color: #fff;
+}
+.hero_info_time_txt span {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 0 3px;
+  border-bottom: 1px solid #fff;
+}
+.hero_info_week {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+.hero_info_week .on {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1b5d00;
+  border-radius: 50%;
+  border: #1b5d00 2px solid;
+  padding: 4.5px 7px;
+  margin-right: 5px;
+}
+.hero_info_week .off {
+  width: 24px;
+  height: 24px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1b5d00;
+  border-radius: 50%;
+  border: #1b5d00 2px solid;
+  opacity: 0.5;
+  margin-right: 3px;
+  padding-left: 3px;
+}
+.hero_info_tel {
+  margin-top: 15px;
+}
+.hero_info_tel p {
+  font-size: 1.1rem;
+}
+.hero_info_tel_num {
+  width: 290px;
+  height: 60px;
+  background: #268e00;
+  border-radius: 10px;
+}
+.hero_info_tel_num p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
 }/*# sourceMappingURL=style.css.map */

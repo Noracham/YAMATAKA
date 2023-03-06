@@ -24,6 +24,9 @@ a {
   margin: 0 auto;
   max-width: 1100px;
 }
+.flex {
+  display: flex;
+}
 .flex_column {
   display: flex;
   flex-direction: column;
@@ -78,7 +81,7 @@ a {
 /*---------- hero ----------*/
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh + 15px);
   background-image: url(../../img/hero.jpg);
   background-position: center;
   background-size: cover;
@@ -99,11 +102,94 @@ a {
     bottom: 6%;
     left: 3%;
     h1 {
-      font-size: 4.5rem;
+      font-size: 5.8rem;
       font-weight: 600;
       letter-spacing: 0.12em;
       color: #fff;
       text-shadow: #222222 0 3px 6px;
+    }
+  }
+  &_info {
+    bottom: 3%;
+    right: 2%;
+    box-shadow: #00000041 7px 7px 7px;
+    width: 360px;
+    height: 360px;
+    padding: 23px 30px;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+    z-index: 3;
+    align-items: center;
+    &_time {
+      &:not(:first-child) {
+        margin-top: 5px;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-text-green;
+      }
+      &_txt {
+        width: 290px;
+        text-align: center;
+        padding: 16px 20px;
+        background: $color-deep-green;
+        border-radius: 50px;
+        p {
+          color: #fff;
+        }
+        span {
+          font-size: 1.7rem;
+          font-weight: bold;
+          padding: 0 3px;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+    &_week {
+      margin-top: 15px;
+      display: flex;
+      align-items: flex-end;
+      .on {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $color-deep-green;
+        border-radius: 50%;
+        border: $color-deep-green 2px solid;
+        padding: 4.5px 7px;
+        margin-right: 5px;
+      }
+      .off {
+        width: 24px;
+        height: 24px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $color-deep-green;
+        border-radius: 50%;
+        border: $color-deep-green 2px solid;
+        opacity: 0.5;
+        margin-right: 3px;
+        padding-left: 3px;
+      }
+    }
+    &_tel {
+      margin-top: 15px;
+      p {
+        font-size: 1.1rem;
+      }
+      &_num {
+        width: 290px;
+        height: 60px;
+        background: $color-green;
+        border-radius: 10px;
+        p {
+          color: #fff;
+          font-weight: bold;
+          font-size: 2.2rem;
+          letter-spacing: 0.1em;
+        }
+      }
     }
   }
 }
