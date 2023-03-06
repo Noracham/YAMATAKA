@@ -1,3 +1,9 @@
 html {
   font-size: 62.5%;
+}
+
+/*---------- wrapper ----------*/
+.wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
 }/*# sourceMappingURL=style.css.map */

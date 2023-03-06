@@ -1,3 +1,30 @@
+@use "mixin" as m;
 html {
   font-size: 62.5%;
+}
+/*---------- 共通調整 ----------*/
+.wrapper {
+  padding: 100px 0;
+  @include m.mq(sp) {
+    padding: 75px 0;
+  }
+}
+.inner {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_center_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
