@@ -4,6 +4,12 @@ html {
   font-size: 62.5%;
   font-family: YuGothic, "Yu Gothic", sans-serif;
   letter-spacing: 0.05em;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #4f6a20;
 }
 
 /*---------- 共通調整 ----------*/
@@ -42,12 +48,13 @@ html {
 /*---------- header ----------*/
 .header {
   background: rgba(255, 255, 255, 0.75);
-  padding: 30px;
+  padding: 0 30px;
   width: 100vw;
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 .header_img {
   width: auto;
@@ -59,9 +66,13 @@ html {
   object-fit: contain;
 }
 .header_nav_list {
+  display: flex;
   font-size: 1.5rem;
   color: #4f6a20;
 }
+.header_nav_list li {
+  list-style: none;
+}
 .header_nav_list li:not(:last-child) {
-  margin-left: 55px;
+  margin-right: 55px;
 }/*# sourceMappingURL=style.css.map */
