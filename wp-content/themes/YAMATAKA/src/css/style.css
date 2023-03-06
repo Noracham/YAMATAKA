@@ -7,6 +7,10 @@ html {
   margin-top: 0;
 }
 
+body {
+  font-size: 62.5%;
+}
+
 a {
   text-decoration: none;
   color: #4f6a20;
@@ -47,6 +51,7 @@ a {
 
 /*---------- header ----------*/
 .header {
+  z-index: 2;
   background: rgba(255, 255, 255, 0.75);
   padding: 0 30px;
   width: 100vw;
@@ -68,6 +73,7 @@ a {
 .header_nav_list {
   display: flex;
   font-size: 1.5rem;
+  font-weight: bold;
   color: #4f6a20;
 }
 .header_nav_list li {
@@ -75,4 +81,37 @@ a {
 }
 .header_nav_list li:not(:last-child) {
   margin-right: 55px;
+}
+
+/*---------- hero ----------*/
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 105vw;
+  height: 100px;
+  box-shadow: 0 -10px 10px #fff;
+  bottom: -100px;
+  left: -2.5vw;
+}
+.hero_txt {
+  position: absolute;
+  bottom: 6%;
+  left: 3%;
+}
+.hero_txt h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #fff;
+  text-shadow: #222222 0 3px 6px;
 }/*# sourceMappingURL=style.css.map */

@@ -22,3 +22,12 @@
             </ul>
         </nav>
     </header>
+    <section class="<?php echo $heroClass = is_home() || is_front_page() ? 'hero' : 'sub_hero' ?>">
+        <?php if (is_home() || is_front_page()) :; ?>
+            <div class="hero_txt">
+                <h1>いつでもそばに<br>いつでもあなたの健康を考えます</h1>
+            </div>
+        <?php else :; ?>
+            aa
+        <?php endif; ?>
+    </section>
