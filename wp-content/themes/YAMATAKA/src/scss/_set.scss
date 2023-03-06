@@ -1,6 +1,9 @@
 @use "mixin" as m;
+@use "variables" as *;
 html {
   font-size: 62.5%;
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+  letter-spacing: 0.05em;
 }
 /*---------- 共通調整 ----------*/
 .wrapper {
@@ -27,4 +30,35 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/*---------- header ----------*/
+.header {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_img {
+    width: auto;
+    height: 90%;
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &_nav {
+    &_list {
+      font-size: 1.5rem;
+      color: $color-text-green;
+      li {
+        &:not(:last-child) {
+          margin-left: 55px;
+        }
+      }
+    }
+  }
 }
