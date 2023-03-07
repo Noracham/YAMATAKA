@@ -54,8 +54,7 @@
                     <p>お問い合わせはこちら</p>
                     <div class="hero_info_tel_num flex_center_column">
                         <div class="flex">
-
-                            <img src="<?php ?>" alt="">
+                            <img src="<?php echo esc_url(get_theme_file_uri('img/Icon feather-phone-call.svg')); ?>" alt="TEL">
                             <p>0577-01-0000</p>
                         </div>
                     </div>
