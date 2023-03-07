@@ -65,7 +65,7 @@ a {
   background: rgba(255, 255, 255, 0.75);
   padding: 0 30px;
   width: 100vw;
-  height: 75px;
+  height: 70px;
   box-shadow: rgba(0, 0, 0, 0.2549019608) 0 3px 5px;
   display: flex;
   justify-content: space-between;
@@ -209,6 +209,17 @@ a {
   bottom: 6%;
   left: 3%;
 }
+@media screen and (max-width: 1024px) {
+  .hero_txt {
+    top: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_txt {
+    left: 8%;
+    top: 13%;
+  }
+}
 .hero_txt h1 {
   font-size: 5.8rem;
   font-weight: 600;
@@ -216,9 +227,22 @@ a {
   color: #fff;
   text-shadow: #222222 0 3px 6px;
 }
+@media screen and (max-width: 1024px) {
+  .hero_txt h1 {
+    writing-mode: vertical-rl;
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_txt h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+  }
+}
 .hero_info {
   bottom: 3%;
-  right: 2%;
+  left: 50%;
+  transform: translateX(-50%);
   box-shadow: rgba(0, 0, 0, 0.2549019608) 7px 7px 7px;
   width: 360px;
   height: 360px;
@@ -228,6 +252,13 @@ a {
   position: absolute;
   z-index: 3;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .hero_info {
+    width: 80%;
+    height: 290px;
+    padding: 10px 20px;
+  }
 }
 .hero_info_time:not(:first-child) {
   margin-top: 5px;
@@ -243,6 +274,12 @@ a {
   padding: 16px 20px;
   background: #1b5d00;
   border-radius: 50px;
+}
+@media screen and (max-width: 768px) {
+  .hero_info_time_txt {
+    width: 250px;
+    padding: 11px 7px;
+  }
 }
 .hero_info_time_txt p {
   color: #fff;
@@ -282,6 +319,11 @@ a {
 .hero_info_tel {
   margin-top: 15px;
 }
+@media screen and (max-width: 1024px) {
+  .hero_info_tel {
+    margin-top: 5px;
+  }
+}
 .hero_info_tel p {
   font-size: 1.1rem;
 }
@@ -290,6 +332,12 @@ a {
   height: 60px;
   background: #268e00;
   border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hero_info_tel_num {
+    width: 250px;
+    height: 50px;
+  }
 }
 .hero_info_tel_num p {
   color: #fff;
