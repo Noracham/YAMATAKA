@@ -58,6 +58,23 @@ a {
   align-items: center;
 }
 
+/*---------- 1文字ずつ出現するアニメーション ----------*/
+.eachTextAnime span {
+  opacity: 0;
+}
+
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+@keyframes text_anime_on {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*---------- header ----------*/
 .header {
   z-index: 5;

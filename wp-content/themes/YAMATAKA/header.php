@@ -35,7 +35,7 @@
     <section class="<?php echo $heroClass = is_home() || is_front_page() ? 'hero' : 'sub_hero' ?>">
         <?php if (is_home() || is_front_page()) :; ?>
             <div class="hero_txt">
-                <h1>いつでもそばに<br>いつでもあなたの<br>健康を考えます</h1>
+                <h1 class="eachTextAnime">いつでもそばに<br>いつでもあなたの<br>健康を考えます</h1>
             </div>
             <div class="hero_info flex_column">
                 <div class="hero_info_time">

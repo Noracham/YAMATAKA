@@ -46,15 +46,15 @@
             <a href="<?php echo esc_url(home_url()) ?>"></a>
             <div class="department_content_parts_img">
             </div>
-            <h1>耳鼻科</h1>
-            <p>耳や鼻に違和感を感じたら</p>
+            <h1>眼科</h1>
+            <p>目に違和感を感じたら</p>
         </div>
         <div class="department_content_parts flex_center_column">
             <a href="<?php echo esc_url(home_url()) ?>"></a>
             <div class="department_content_parts_img">
             </div>
-            <h1>耳鼻科</h1>
-            <p>耳や鼻に違和感を感じたら</p>
+            <h1>内科</h1>
+            <p>からだに違和感を感じたら</p>
         </div>
     </div>
 </section>
