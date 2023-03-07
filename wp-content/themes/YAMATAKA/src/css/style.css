@@ -5,7 +5,6 @@ html {
   font-family: YuGothic, "Yu Gothic", sans-serif;
   letter-spacing: 0.05em;
   margin-top: 0;
-  height: 200vh;
   scroll-behavior: smooth;
 }
 
@@ -241,8 +240,7 @@ a {
 }
 .hero_info {
   bottom: 3%;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 1%;
   box-shadow: rgba(0, 0, 0, 0.2549019608) 7px 7px 7px;
   width: 360px;
   height: 360px;
@@ -255,6 +253,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .hero_info {
+    right: 2%;
     width: 80%;
     height: 290px;
     padding: 10px 20px;
@@ -288,7 +287,6 @@ a {
   font-size: 1.9rem;
   font-weight: bold;
   padding: 0 3px;
-  border-bottom: 1px solid #fff;
 }
 .hero_info_week {
   margin-top: 15px;
