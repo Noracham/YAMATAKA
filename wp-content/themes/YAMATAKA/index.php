@@ -2,6 +2,7 @@
 <section class="know wrapper" id="test">
     <div class="know_content">
         <div class="know_content_one flex_center_column">
+            <a href="<?php echo esc_url(home_url()) ?>"></a>
             <div class="know_content_one_title"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-hospital-alt.svg')); ?>" alt="hospital" />
                 <h2>病院を知る</h2>
             </div>
@@ -9,12 +10,14 @@
                 所属医師の情報の確認も可能です。</p>
         </div>
         <div class="know_content_one flex_center_column">
+            <a href="<?php echo esc_url(home_url()) ?>"></a>
             <div class="know_content_one_title"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-paper-plane.svg')); ?>" alt="hospitalcross" />
                 <h2>診療科を知る</h2>
             </div>
             <p>当院の緊急休業日や最新の情報など、大切なお知らせなどを確認するにはこちらをご覧ください。</p>
         </div>
         <div class="know_content_one flex_center_column">
+            <a href="<?php echo esc_url(home_url()) ?>"></a>
             <div class="know_content_one_title"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-hospital-alt.svg')); ?>" alt="information" />
                 <h2>情報を知る</h2>
             </div>
@@ -22,6 +25,7 @@
                 所属医師の情報の確認も可能です。</p>
         </div>
         <div class="know_content_one flex_center_column">
+            <a href="<?php echo esc_url(home_url()) ?>"></a>
             <div class="know_content_one_title"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-map-marker-alt.svg')); ?>" alt="access" />
                 <h2>アクセスを知る</h2>
             </div>
