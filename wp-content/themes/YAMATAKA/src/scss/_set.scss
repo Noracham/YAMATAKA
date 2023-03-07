@@ -6,6 +6,7 @@ html {
   letter-spacing: 0.05em;
   margin-top: 0;
   height: 200vh;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 62.5%;
@@ -59,6 +60,12 @@ a {
   align-items: center;
   position: fixed;
   transition: all 0.5s;
+  @include m.mq(tab) {
+    padding: 0 20px;
+  }
+  @include m.mq(sp) {
+    padding: 0 15px;
+  }
   &_img {
     width: auto;
     height: 80%;
@@ -74,11 +81,85 @@ a {
       font-size: 1.5rem;
       font-weight: bold;
       color: $color-text-green;
+      @include m.mq(sp) {
+        display: none;
+      }
       li {
         list-style: none;
         &:not(:last-child) {
           margin-right: 55px;
+          @include m.mq(tab) {
+            margin-right: 30px;
+          }
         }
+      }
+    }
+    /*---------- ハンバーガー ----------*/
+    &_sp {
+      display: none;
+      @include m.mq(sp) {
+        display: block;
+        width: 34px;
+        height: 28px;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
+      }
+      span {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: $color-deep-green;
+        transition: all 0.5s;
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 12.5px;
+        }
+        &:nth-child(3) {
+          bottom: 0;
+        }
+      }
+    }
+    .menu_visible {
+      span {
+        background: #fff;
+        &:nth-child(1) {
+          top: calc(50% - 3px);
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          bottom: 50%;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+.sp_menu {
+  width: 100vw;
+  height: 100vh;
+  background: $color-green;
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  z-index: -1;
+  ul {
+    li {
+      text-align: center;
+      list-style-type: none;
+      font-size: 3rem;
+      font-weight: bold;
+      &:not(:first-child) {
+        margin-top: 50px;
+      }
+      a {
+        color: #fff;
       }
     }
   }

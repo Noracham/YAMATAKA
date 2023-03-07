@@ -13,6 +13,7 @@
     <header class="header">
         <div class="header_img"><img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')); ?>" alt="logo"></div>
         <nav class="header_nav">
+            <div class="header_nav_sp"><span></span><span></span><span></span></div>
             <ul class="header_nav_list">
                 <li><a href="<?php echo esc_url(home_url('/department/')); ?>">診療科案内</a></li>
                 <li><a href="<?php echo esc_url(home_url('/hospital/')); ?>">病院案内</a></li>
@@ -21,6 +22,15 @@
                 <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
             </ul>
         </nav>
+        <div class="sp_menu flex_center">
+            <ul>
+                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">病院案内</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">診療科案内</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">お知らせ</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">アクセス</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">お問い合わせ</a></li>
+            </ul>
+        </div>
     </header>
     <section class="<?php echo $heroClass = is_home() || is_front_page() ? 'hero' : 'sub_hero' ?>">
         <?php if (is_home() || is_front_page()) :; ?>

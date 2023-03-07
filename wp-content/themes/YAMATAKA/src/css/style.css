@@ -6,6 +6,7 @@ html {
   letter-spacing: 0.05em;
   margin-top: 0;
   height: 200vh;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -70,6 +71,16 @@ a {
   position: fixed;
   transition: all 0.5s;
 }
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 15px;
+  }
+}
 .header_img {
   width: auto;
   height: 80%;
@@ -79,17 +90,96 @@ a {
   height: 100%;
   object-fit: contain;
 }
+.header_nav {
+  /*---------- ハンバーガー ----------*/
+}
 .header_nav_list {
   display: flex;
   font-size: 1.5rem;
   font-weight: bold;
   color: #4f6a20;
 }
+@media screen and (max-width: 768px) {
+  .header_nav_list {
+    display: none;
+  }
+}
 .header_nav_list li {
   list-style: none;
 }
 .header_nav_list li:not(:last-child) {
   margin-right: 55px;
+}
+@media screen and (max-width: 1024px) {
+  .header_nav_list li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.header_nav_sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header_nav_sp {
+    display: block;
+    width: 34px;
+    height: 28px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+  }
+}
+.header_nav_sp span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #1b5d00;
+  transition: all 0.5s;
+}
+.header_nav_sp span:nth-child(1) {
+  top: 0;
+}
+.header_nav_sp span:nth-child(2) {
+  top: 12.5px;
+}
+.header_nav_sp span:nth-child(3) {
+  bottom: 0;
+}
+.header_nav .menu_visible span {
+  background: #fff;
+}
+.header_nav .menu_visible span:nth-child(1) {
+  top: calc(50% - 3px);
+  transform: rotate(45deg);
+}
+.header_nav .menu_visible span:nth-child(2) {
+  display: none;
+}
+.header_nav .menu_visible span:nth-child(3) {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+.sp_menu {
+  width: 100vw;
+  height: 100vh;
+  background: #268e00;
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  z-index: -1;
+}
+.sp_menu ul li {
+  text-align: center;
+  list-style-type: none;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.sp_menu ul li:not(:first-child) {
+  margin-top: 50px;
+}
+.sp_menu ul li a {
+  color: #fff;
 }
 
 /*---------- hero ----------*/

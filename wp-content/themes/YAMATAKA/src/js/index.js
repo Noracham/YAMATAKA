@@ -12,4 +12,22 @@ $(function () {
       });
     }
   });
+  let visible = true;
+  $(".header_nav_sp").on("click", function () {
+    if (visible == true) {
+      $(this).addClass("menu_visible");
+      visible = false;
+
+      $(".sp_menu").animate({ right: "0" }, 500);
+    } else {
+      $(this).removeClass("menu_visible");
+      visible = true;
+      $(".sp_menu").animate({ right: "-100vw" }, 500);
+    }
+  });
+  $(".trigger").on("click", function () {
+    $(".header_nav_sp").removeClass("menu_visible");
+    visible = true;
+    $(".sp_menu").animate({ right: "-100vw" }, 500);
+  });
 });
