@@ -122,3 +122,52 @@
     }
   }
 }
+/*---------- news ----------*/
+.news {
+  &_content {
+    width: 100vw;
+    &_new {
+      height: 600px;
+      position: relative;
+      width: 100vw;
+      &::before {
+        z-index: 2;
+        content: "";
+        position: absolute;
+        left: 0;
+        overflow-x: hidden;
+        border-style: solid;
+        border-width: 600px 0 0 270vw;
+        border-color: transparent transparent transparent $color-sub-green;
+      }
+      &::after {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        border-style: solid;
+        border-width: 0 0 600px 270vw;
+        border-color: transparent transparent $color-green transparent;
+      }
+      &_inner {
+        position: relative;
+        z-index: 10;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        h1 {
+          font-size: 3.7rem;
+          color: $color-text-green;
+        }
+        .news_list {
+          li {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

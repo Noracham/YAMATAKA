@@ -486,4 +486,50 @@ a {
 }
 .department_content_parts:nth-of-type(3) .department_content_parts_img {
   background-image: url(../../img/naika.png);
+}
+
+/*---------- news ----------*/
+.news_content {
+  width: 100vw;
+}
+.news_content_new {
+  height: 600px;
+  position: relative;
+  width: 100vw;
+}
+.news_content_new::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  left: 0;
+  overflow-x: hidden;
+  border-style: solid;
+  border-width: 600px 0 0 270vw;
+  border-color: transparent transparent transparent #eafced;
+}
+.news_content_new::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  border-style: solid;
+  border-width: 0 0 600px 270vw;
+  border-color: transparent transparent #268e00 transparent;
+}
+.news_content_new_inner {
+  position: relative;
+  z-index: 10;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.news_content_new_inner h1 {
+  font-size: 3.7rem;
+  color: #4f6a20;
+}
+.news_content_new_inner .news_list li {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

@@ -58,4 +58,18 @@
         </div>
     </div>
 </section>
+<section class="news wrapper">
+    <div class="news_content">
+        <div class="news_content_new">
+            <div class="news_content_new_inner">
+                <h1>新着情報</h1>
+                <ul class="news_list">
+                    <li><span class="news_list_date">2023/03/03</span><span class="news_list_tag">お知らせ</span>
+                        <p class="news_list_txt">aaaa</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>
