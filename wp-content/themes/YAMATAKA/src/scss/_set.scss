@@ -100,12 +100,54 @@ a {
         display: none;
       }
       li {
+        position: relative;
         list-style: none;
+        transition: all 0.5s;
         &:not(:last-child) {
           margin-right: 55px;
           @include m.mq(tab) {
             margin-right: 30px;
           }
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          right: 50%;
+          width: 0;
+          height: 2px;
+          background: $color-text-green;
+          transition: all 0.5s;
+        }
+        &:hover::before {
+          width: 50%;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background: $color-text-green;
+          transition: all 0.5s;
+        }
+        &:hover::after {
+          width: 50%;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          right: 50%;
+          width: 0;
+          height: 2px;
+          background: $color-text-green;
+          transition: all 0.5s;
+        }
+        &:hover::before {
+          width: 50%;
         }
       }
     }
