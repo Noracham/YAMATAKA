@@ -5,6 +5,7 @@ html {
   font-family: YuGothic, "Yu Gothic", sans-serif;
   letter-spacing: 0.05em;
   margin-top: 0;
+  height: 200vh;
 }
 
 body {
@@ -29,6 +30,8 @@ a {
 .inner {
   margin: 0 auto;
   max-width: 1100px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .flex {
@@ -55,16 +58,17 @@ a {
 
 /*---------- header ----------*/
 .header {
-  z-index: 2;
+  z-index: 5;
   background: rgba(255, 255, 255, 0.75);
   padding: 0 30px;
   width: 100vw;
-  height: 70px;
+  height: 75px;
   box-shadow: rgba(0, 0, 0, 0.2549019608) 0 3px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  transition: all 0.5s;
 }
 .header_img {
   width: auto;
@@ -152,7 +156,7 @@ a {
   color: #fff;
 }
 .hero_info_time_txt span {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: bold;
   padding: 0 3px;
   border-bottom: 1px solid #fff;
@@ -163,12 +167,12 @@ a {
   align-items: flex-end;
 }
 .hero_info_week .on {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #1b5d00;
   border-radius: 50%;
   border: #1b5d00 2px solid;
-  padding: 4px 7px;
+  padding: 2px 6px;
   margin-right: 5px;
 }
 .hero_info_week .off {
@@ -181,7 +185,7 @@ a {
   border: #1b5d00 2px solid;
   opacity: 0.5;
   margin-right: 3px;
-  padding-left: 3px;
+  padding-left: 3.5px;
 }
 .hero_info_tel {
   margin-top: 15px;
@@ -203,4 +207,38 @@ a {
 }
 .hero_info_tel_num img {
   margin-right: 10px;
+}
+
+/*---------- know ----------*/
+.know_content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.know_content_one {
+  border-radius: 10px;
+  width: 24%;
+  padding: 2.5%;
+  background: #f8f8f8;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1450980392);
+}
+.know_content_one_title {
+  display: flex;
+  align-items: center;
+}
+.know_content_one_title h2 {
+  font-size: 2.5rem;
+  color: #4f6a20;
+  white-space: nowrap;
+}
+.know_content_one_title img {
+  margin-right: 5%;
+}
+.know_content_one p {
+  font-size: 1.7rem;
+  margin-top: 20px;
+  line-height: 2.8rem;
 }/*# sourceMappingURL=style.css.map */
