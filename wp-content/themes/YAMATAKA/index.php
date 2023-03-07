@@ -29,4 +29,29 @@
         </div>
     </div>
 </section>
+<section class="department wrapper">
+    <div class="department_content inner">
+        <div class="department_content_parts flex_center_column">
+            <a href="<?php echo esc_url(home_url()) ?>"></a>
+            <div class="department_content_parts_img">
+            </div>
+            <h1>耳鼻科</h1>
+            <p>耳や鼻に違和感を感じたら</p>
+        </div>
+        <div class="department_content_parts flex_center_column">
+            <a href="<?php echo esc_url(home_url()) ?>"></a>
+            <div class="department_content_parts_img">
+            </div>
+            <h1>耳鼻科</h1>
+            <p>耳や鼻に違和感を感じたら</p>
+        </div>
+        <div class="department_content_parts flex_center_column">
+            <a href="<?php echo esc_url(home_url()) ?>"></a>
+            <div class="department_content_parts_img">
+            </div>
+            <h1>耳鼻科</h1>
+            <p>耳や鼻に違和感を感じたら</p>
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>

@@ -395,4 +395,59 @@ a {
   font-size: 1.7rem;
   margin-top: 20px;
   line-height: 2.8rem;
+}
+
+/*---------- 診療科 ----------*/
+.department_content {
+  display: flex;
+  justify-content: space-between;
+}
+.department_content_parts {
+  width: 27%;
+  background: #fffdeb;
+  box-shadow: 0 0 5px #938800;
+  padding: 10px;
+  border-radius: 100px;
+  aspect-ratio: 1/1;
+  position: relative;
+  transition: all 0.2s;
+}
+.department_content_parts:hover {
+  filter: brightness(90%);
+}
+.department_content_parts_img {
+  width: 60%;
+  aspect-ratio: 5/3;
+  margin-bottom: 20px;
+  background-image: url(../../img/zibika.png);
+  background-position: center;
+  background-size: contain;
+}
+.department_content_parts h1 {
+  font-size: 4rem;
+}
+.department_content_parts p {
+  font-size: 1.7rem;
+}
+.department_content_parts a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.department_content_parts:nth-of-type(2) {
+  background: #f4fdfd;
+  box-shadow: #006565 0 0 5px;
+}
+.department_content_parts:nth-of-type(2) .department_content_parts_img {
+  background-image: url(../../img/ganka.png);
+  background-size: cover;
+}
+.department_content_parts:nth-of-type(3) {
+  background: #fdf4fb;
+  box-shadow: #760017 0 0 5px;
+}
+.department_content_parts:nth-of-type(3) .department_content_parts_img {
+  background-image: url(../../img/naika.png);
 }/*# sourceMappingURL=style.css.map */
