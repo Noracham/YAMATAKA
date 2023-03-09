@@ -95,6 +95,9 @@
       align-items: center;
       justify-content: center;
     }
+    @include m.mq(sp) {
+      flex-direction: column;
+    }
     &_parts {
       width: 27%;
       background: #fffdeb;
@@ -107,6 +110,11 @@
       @include m.mq(tab) {
         margin: 0 3%;
         min-width: 270px;
+      }
+      @include m.mq(sp) {
+        &:not(:first-child) {
+          margin-top: 30px;
+        }
       }
       &:hover {
         filter: brightness(90%);
@@ -193,6 +201,10 @@
         h1 {
           font-size: 3.7rem;
           color: $color-text-green;
+          @include m.mq(sp) {
+            position: absolute;
+            top: 20px;
+          }
         }
         .newslist_wrapper {
           position: relative;
@@ -217,6 +229,9 @@
           display: flex;
           flex-direction: column;
           margin-top: 100px;
+          @include m.mq(sp) {
+            padding-top: 150px;
+          }
           li {
             padding: 28px 0 28px 2%;
             border-top: 1px solid $color-text-green;
@@ -226,6 +241,10 @@
             font-size: 1.7rem;
             &:last-child {
               border-bottom: 1px solid $color-text-green;
+            }
+            @include m.mq(sp) {
+              padding: 20px 0 20px 2%;
+              flex-wrap: wrap;
             }
           }
           &_tag {
