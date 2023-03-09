@@ -163,9 +163,45 @@
           font-size: 3.7rem;
           color: $color-text-green;
         }
+        .newslist_wrapper {
+          position: relative;
+          max-width: 900px;
+          margin: 0 auto;
+          a {
+            position: absolute;
+            right: 0;
+            bottom: -5rem;
+            font-size: 2rem;
+            font-weight: bold;
+            img {
+              padding-left: 10px;
+              margin-bottom: -2px;
+            }
+          }
+        }
         .news_list {
+          display: flex;
+          flex-direction: column;
+          margin-top: 100px;
           li {
+            padding: 28px 0 28px 2%;
+            border-top: 1px solid $color-text-green;
             display: flex;
+            align-items: center;
+            color: $color-text-green;
+            font-size: 1.7rem;
+            &:last-child {
+              border-bottom: 1px solid $color-text-green;
+            }
+          }
+
+          &_tag {
+            font-size: 1.4rem;
+            padding: 4px 6px;
+            color: #fff;
+            border-radius: 10px;
+            background: $color-green;
+            margin: 0 20px;
           }
         }
       }
