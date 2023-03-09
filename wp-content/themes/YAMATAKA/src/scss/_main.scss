@@ -160,6 +160,54 @@
   }
 }
 /*---------- news ----------*/
+.news_back {
+  &::before {
+    cursor: pointer;
+    z-index: 2;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 600px;
+    background: $color-sub-green;
+  }
+  // &::after {
+  //   z-index: 1;
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   overflow-x: hidden;
+  //   border-style: solid;
+  //   border-width: 0 0 600px 270vw;
+  //   border-color: transparent transparent $color-green transparent;
+  // }
+}
+// .news_back2 {
+//   transition: all 0.5s;
+//   &::before {
+//     cursor: pointer;
+//     z-index: 1;
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     overflow-x: hidden;
+//     border-style: solid;
+//     border-width: 600px 0 0 270vw;
+//     border-color: transparent transparent transparent $color-sub-green;
+//   }
+//   &::after {
+//     z-index: 2;
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     overflow-x: hidden;
+//     border-style: solid;
+//     border-width: 0 0 600px 270vw;
+//     border-color: transparent transparent $color-green transparent;
+//   }
+// }
 .news {
   &_content {
     width: 100vw;
@@ -169,27 +217,6 @@
       height: 600px;
       position: relative;
       width: 100vw;
-      &::before {
-        z-index: 2;
-        content: "";
-        position: absolute;
-        left: 0;
-        overflow-x: hidden;
-        border-style: solid;
-        border-width: 600px 0 0 270vw;
-        border-color: transparent transparent transparent $color-sub-green;
-      }
-      &::after {
-        z-index: 1;
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        overflow-x: hidden;
-        border-style: solid;
-        border-width: 0 0 600px 270vw;
-        border-color: transparent transparent $color-green transparent;
-      }
       &_inner {
         position: relative;
         top: 70px;
@@ -198,14 +225,7 @@
         margin: 0 auto;
         padding-right: 15px;
         padding-left: 15px;
-        h1 {
-          font-size: 3.7rem;
-          color: $color-text-green;
-          @include m.mq(sp) {
-            position: absolute;
-            top: 20px;
-          }
-        }
+
         .newslist_wrapper {
           position: relative;
           max-width: 900px;
@@ -228,10 +248,7 @@
         .news_list {
           display: flex;
           flex-direction: column;
-          margin-top: 100px;
-          @include m.mq(sp) {
-            padding-top: 150px;
-          }
+          padding-top: 75px;
           li {
             padding: 28px 0 28px 2%;
             border-top: 1px solid $color-text-green;

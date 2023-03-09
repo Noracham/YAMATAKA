@@ -407,6 +407,44 @@ a {
   margin-right: 10px;
 }
 
+/*---------- subtitle ----------*/
+.sub_title {
+  text-align: center;
+  position: relative;
+  color: #4f6a20;
+  font-size: 3.7rem;
+  z-index: 10;
+  text-shadow: 0 0 5px 3px #eee;
+}
+@media screen and (max-width: 768px) {
+  .sub_title {
+    font-size: 3rem;
+  }
+}
+.sub_title::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #eafced;
+  left: 50%;
+  top: -20px;
+  z-index: -1;
+}
+.sub_title::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #acff83;
+  left: 50%;
+  top: -30px;
+  z-index: -2;
+  box-shadow: 0 0 5px 3px #eee;
+}
+
 /*---------- know ----------*/
 .know_content {
   display: flex;
@@ -581,6 +619,17 @@ a {
 }
 
 /*---------- news ----------*/
+.news_back::before {
+  cursor: pointer;
+  z-index: 2;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 600px;
+  background: #eafced;
+}
+
 .news_content {
   width: 100vw;
   max-width: 100vw;
@@ -591,27 +640,6 @@ a {
   position: relative;
   width: 100vw;
 }
-.news_content_new::before {
-  z-index: 2;
-  content: "";
-  position: absolute;
-  left: 0;
-  overflow-x: hidden;
-  border-style: solid;
-  border-width: 600px 0 0 270vw;
-  border-color: transparent transparent transparent #eafced;
-}
-.news_content_new::after {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
-  border-style: solid;
-  border-width: 0 0 600px 270vw;
-  border-color: transparent transparent #268e00 transparent;
-}
 .news_content_new_inner {
   position: relative;
   top: 70px;
@@ -620,16 +648,6 @@ a {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-}
-.news_content_new_inner h1 {
-  font-size: 3.7rem;
-  color: #4f6a20;
-}
-@media screen and (max-width: 768px) {
-  .news_content_new_inner h1 {
-    position: absolute;
-    top: 20px;
-  }
 }
 .news_content_new_inner .newslist_wrapper {
   position: relative;
@@ -655,12 +673,7 @@ a {
 .news_content_new_inner .news_list {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-}
-@media screen and (max-width: 768px) {
-  .news_content_new_inner .news_list {
-    padding-top: 150px;
-  }
+  padding-top: 75px;
 }
 .news_content_new_inner .news_list li {
   padding: 28px 0 28px 2%;

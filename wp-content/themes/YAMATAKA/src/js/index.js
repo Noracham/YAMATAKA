@@ -73,4 +73,15 @@ $(function () {
     });
     EachTextAnimeControl();
   });
+  //お知らせ切り替え
+  $(".important_title").on("click", function () {
+    $(".news_content_new").removeClass("news_back");
+    $(".news_content_new").addClass("news_back2");
+    console.log("999");
+  });
+  $(".new_title").on("click", function () {
+    $(".news_content_new").removeClass("news_back2");
+    $(".news_content_new").addClass("news_back");
+    console.log("999");
+  });
 });
