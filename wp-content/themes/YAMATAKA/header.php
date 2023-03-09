@@ -18,17 +18,17 @@
                 <li><a href="<?php echo esc_url(home_url('/department/')); ?>">診療科案内</a></li>
                 <li><a href="<?php echo esc_url(home_url('/hospital/')); ?>">病院案内</a></li>
                 <li><a href="<?php echo esc_url(home_url('/category/news/')); ?>">お知らせ</a></li>
-                <li><a href="#">アクセス</a></li>
+                <li><a href="#access">アクセス</a></li>
                 <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
             </ul>
         </nav>
         <div class="sp_menu flex_center">
             <ul>
-                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">病院案内</a></li>
-                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">診療科案内</a></li>
-                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">お知らせ</a></li>
-                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">アクセス</a></li>
-                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#test">お問い合わせ</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url("/hospital/")); ?>">病院案内</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url("/department/")); ?>">診療科案内</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url("/category/news")); ?>">お知らせ</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url()); ?>#access">アクセス</a></li>
+                <li><a class="trigger" href="<?php echo esc_url(home_url("/contact/")); ?>">お問い合わせ</a></li>
             </ul>
         </div>
     </header>
