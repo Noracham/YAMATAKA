@@ -84,6 +84,11 @@
   &_content {
     display: flex;
     justify-content: space-between;
+    @include m.mq(tab) {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
     &_parts {
       width: 27%;
       background: #fffdeb;
@@ -93,6 +98,10 @@
       aspect-ratio: 1/1;
       position: relative;
       transition: all 0.2s;
+      @include m.mq(tab) {
+        margin: 0 3%;
+        min-width: 270px;
+      }
       &:hover {
         filter: brightness(90%);
       }

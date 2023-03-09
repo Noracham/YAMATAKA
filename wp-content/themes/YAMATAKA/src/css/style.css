@@ -499,6 +499,13 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .department_content {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .department_content_parts {
   width: 27%;
   background: #fffdeb;
@@ -508,6 +515,12 @@ a {
   aspect-ratio: 1/1;
   position: relative;
   transition: all 0.2s;
+}
+@media screen and (max-width: 1024px) {
+  .department_content_parts {
+    margin: 0 3%;
+    min-width: 270px;
+  }
 }
 .department_content_parts:hover {
   filter: brightness(90%);
