@@ -277,3 +277,30 @@
     }
   }
 }
+/*---------- access ----------*/
+.access {
+  &_content {
+    margin-top: 70px;
+    display: flex;
+    &_map {
+      width: 50%;
+      iframe {
+        width: 100%;
+        aspect-ratio: 3/2;
+      }
+    }
+    &_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 1% 0 1% 7%;
+      &_txt {
+        font-size: 1.7rem;
+        color: $color-text-green;
+        line-height: 3.4rem;
+        padding: 20px 25px;
+        border-left: 3px solid $color-green;
+      }
+    }
+  }
+}

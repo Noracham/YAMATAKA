@@ -18,7 +18,7 @@ a {
 }
 /*---------- 共通調整 ----------*/
 .wrapper {
-  padding: 100px 0;
+  padding: 85px 0;
   @include m.mq(sp) {
     padding: 75px 0;
   }
@@ -389,7 +389,7 @@ a {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: $color-sub-green;
+    background: #fff;
     left: 50%;
     top: -20px;
     z-index: -1;

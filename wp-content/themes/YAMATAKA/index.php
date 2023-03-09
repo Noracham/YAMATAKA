@@ -81,4 +81,17 @@
         </div>
     </div>
 </section>
+<section class="access wrapper" id="access">
+    <h1 class="sub_title">アクセス情報</h1>
+    <div class="access_content inner">
+        <div class="access_content_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.838337501293!2d137.249967315711!3d36.14614931194031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6002bb2a69bfffff%3A0x519f027d6402cd7c!2z6auY5bGx5biC5b255omA!5e0!3m2!1sja!2sjp!4v1678357975601!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="access_content_info">
+            <p class="access_content_info_txt">直通バスを午前、午後<br>〇〇バス停より直通バス運行</p>
+            <p class="access_content_info_txt">高山駅から車で12分<br>第一駐車場20台、臨時駐車場5台</p>
+            <p class="access_content_info_txt">岐阜県高山市〇〇町11-11<br>ヤマタカ病院</p>
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>

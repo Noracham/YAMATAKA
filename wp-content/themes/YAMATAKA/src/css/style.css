@@ -21,7 +21,7 @@ a {
 
 /*---------- 共通調整 ----------*/
 .wrapper {
-  padding: 100px 0;
+  padding: 85px 0;
 }
 @media screen and (max-width: 768px) {
   .wrapper {
@@ -427,7 +427,7 @@ a {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #eafced;
+  background: #fff;
   left: 50%;
   top: -20px;
   z-index: -1;
@@ -699,4 +699,30 @@ a {
   border-radius: 10px;
   background: #268e00;
   margin: 0 20px;
+}
+
+/*---------- access ----------*/
+.access_content {
+  margin-top: 70px;
+  display: flex;
+}
+.access_content_map {
+  width: 50%;
+}
+.access_content_map iframe {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.access_content_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1% 0 1% 7%;
+}
+.access_content_info_txt {
+  font-size: 1.7rem;
+  color: #4f6a20;
+  line-height: 3.4rem;
+  padding: 20px 25px;
+  border-left: 3px solid #268e00;
 }/*# sourceMappingURL=style.css.map */
