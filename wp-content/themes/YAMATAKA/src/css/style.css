@@ -430,6 +430,7 @@ a {
   }
 }
 .know_content_one {
+  align-items: center;
   position: relative;
   border-radius: 10px;
   width: 24%;
@@ -475,6 +476,7 @@ a {
 }
 .know_content_one_title {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .know_content_one_title h2 {
@@ -489,6 +491,12 @@ a {
   font-size: 1.7rem;
   margin-top: 20px;
   line-height: 2.8rem;
+  padding-left: 3%;
+}
+@media screen and (max-width: 1024px) {
+  .know_content_one p {
+    font-size: 1.6rem;
+  }
 }
 
 /*---------- 診療科 ----------*/
@@ -611,6 +619,11 @@ a {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .news_content_new_inner .newslist_wrapper {
+    max-width: 650px;
+  }
 }
 .news_content_new_inner .newslist_wrapper a {
   position: absolute;

@@ -20,6 +20,7 @@
       align-items: center;
     }
     &_one {
+      align-items: center;
       position: relative;
       border-radius: 10px;
       width: 24%;
@@ -60,6 +61,7 @@
       }
       &_title {
         display: flex;
+        justify-content: center;
         align-items: center;
         h2 {
           font-size: 2.5rem;
@@ -74,6 +76,10 @@
         font-size: 1.7rem;
         margin-top: 20px;
         line-height: 2.8rem;
+        padding-left: 3%;
+        @include m.mq(tab) {
+          font-size: 1.6rem;
+        }
       }
     }
   }
@@ -192,6 +198,9 @@
           position: relative;
           max-width: 900px;
           margin: 0 auto;
+          @include m.mq(tab) {
+            max-width: 650px;
+          }
           a {
             position: absolute;
             right: 0;
@@ -219,7 +228,6 @@
               border-bottom: 1px solid $color-text-green;
             }
           }
-
           &_tag {
             font-size: 1.4rem;
             padding: 4px 6px;
