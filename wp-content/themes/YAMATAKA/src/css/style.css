@@ -706,8 +706,18 @@ a {
   margin-top: 70px;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .access_content {
+    flex-direction: column;
+  }
+}
 .access_content_map {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .access_content_map {
+    width: 100%;
+  }
 }
 .access_content_map iframe {
   width: 100%;
@@ -719,10 +729,20 @@ a {
   justify-content: space-around;
   margin: 1% 0 1% 7%;
 }
+@media screen and (max-width: 768px) {
+  .access_content_info {
+    margin: 3% 0 0 0;
+  }
+}
 .access_content_info_txt {
   font-size: 1.7rem;
   color: #4f6a20;
   line-height: 3.4rem;
   padding: 20px 25px;
   border-left: 3px solid #268e00;
+}
+@media screen and (max-width: 768px) {
+  .access_content_info_txt:not(:first-child) {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
