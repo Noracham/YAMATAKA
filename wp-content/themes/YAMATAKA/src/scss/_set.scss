@@ -379,7 +379,7 @@ a {
   color: $color-text-green;
   font-size: 3.7rem;
   z-index: 10;
-  text-shadow: 0 0 5px 3px #eee;
+  text-shadow: 0 0 10px 3px #eee;
   @include m.mq(sp) {
     font-size: 3rem;
   }
@@ -400,7 +400,7 @@ a {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: #acff83;
+    background: $color-green;
     left: 50%;
     top: -30px;
     z-index: -2;
@@ -416,12 +416,18 @@ a {
   background: $color-deep-green;
   display: flex;
   @include m.mq(sp) {
+    height: auto;
+    flex-direction: column;
     margin-top: 75px;
   }
   &_logo {
     background: $color-sub-green;
     width: 30%;
     height: 100%;
+    @include m.mq(sp) {
+      width: 100%;
+      height: 130px;
+    }
     img {
       width: 70%;
       object-fit: contain;
@@ -429,11 +435,21 @@ a {
   }
   &_info {
     padding: 30px 0;
-    width: 55%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
+    @include m.mq(sp) {
+      flex-direction: column;
+      width: 100%;
+      padding: 30px 15px;
+    }
     &_list {
+      @include m.mq(sp) {
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+      }
       li {
         color: #fff;
       }
