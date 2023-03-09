@@ -64,7 +64,7 @@ a {
 }
 /*---------- header ----------*/
 .header {
-  z-index: 5;
+  z-index: 999999;
   background: rgba(255, 255, 255, 0.75);
   padding: 0 30px;
   width: 100vw;
@@ -404,6 +404,58 @@ a {
     left: 50%;
     top: -30px;
     z-index: -2;
-    box-shadow: 0 0 5px 3px #eee;
+    // box-shadow: 0 0 5px 3px #eee;
+  }
+}
+/*---------- footer ----------*/
+.footer {
+  position: relative;
+  width: 100vw;
+  height: 260px;
+  margin-top: 85px;
+  background: $color-deep-green;
+  display: flex;
+  @include m.mq(sp) {
+    margin-top: 75px;
+  }
+  &_logo {
+    background: $color-sub-green;
+    width: 30%;
+    height: 100%;
+    img {
+      width: 70%;
+      object-fit: contain;
+    }
+  }
+  &_info {
+    padding: 30px 0;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    &_list {
+      li {
+        color: #fff;
+      }
+      .head {
+        list-style: none;
+        margin-bottom: 15px;
+        a {
+          border-bottom: 1px solid #fff;
+        }
+      }
+      a {
+        color: #fff;
+      }
+    }
+  }
+  &_place {
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    right: 15px;
+    bottom: 15px;
   }
 }

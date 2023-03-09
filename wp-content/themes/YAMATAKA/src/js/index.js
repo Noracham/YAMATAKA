@@ -84,4 +84,12 @@ $(function () {
     $(".news_content_new").addClass("news_back");
     console.log("999");
   });
+
+  //footer list 余白調整
+  $(".footer_info_list li").each(function (index, element) {
+    // element == this
+    if (!$(this).hasClass("head")) {
+      $(this).css({ "margin-left": "15px" });
+    }
+  });
 });
