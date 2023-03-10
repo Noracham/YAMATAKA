@@ -268,7 +268,6 @@ a {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  margin-bottom: 100px;
 }
 .hero::after {
   content: "";

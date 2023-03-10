@@ -65,15 +65,18 @@
                 <h1 class="new_title sub_title">新着情報</h1>
                 <div class="newslist_wrapper">
                     <ul class="news_list">
-                        <li><span class="news_list_date">2023/03/03</span><span class="news_list_tag">お知らせ</span>
-                            <p class="news_list_txt">新型コロナウイルスの規制緩和について</p>
-                        </li>
-                        <li><span class="news_list_date">2023/03/03</span><span class="news_list_tag">お知らせ</span>
-                            <p class="news_list_txt">新型コロナウイルスの規制緩和について</p>
-                        </li>
-                        <li><span class="news_list_date">2023/03/03</span><span class="news_list_tag">お知らせ</span>
-                            <p class="news_list_txt">新型コロナウイルスの規制緩和について</p>
-                        </li>
+                        <?php
+                        $args = [
+                            'category_name' => 'news',
+                            'posts_per_page' => 3
+                        ];
+                        $query = new WP_Query($args);
+                        if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+                                <li><span class="news_list_date"><?php the_time('Y/m/d'); ?></span><span class="news_list_tag"><?php the_field('newsTag'); ?></span>
+                                    <p class="news_list_txt"><?php the_title(); ?></p>
+                                </li>
+                        <?php endwhile;
+                        endif; ?>
                     </ul>
                     <a href="<?php echo esc_url(home_url('/category/news/')); ?>">続きを見る<img src="<?php echo esc_url(get_theme_file_uri('img/Icon material-navigate-next.svg')); ?>" alt=""></a>
                 </div>
