@@ -1134,6 +1134,14 @@ a {
   padding: 25px 50px;
   border-radius: 100px;
 }
+@media screen and (max-width: 768px) {
+  .department_content_one {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 5%;
+    border-radius: 70px;
+  }
+}
 .department_content_one:not(:first-child) {
   margin-top: 100px;
 }
@@ -1161,8 +1169,15 @@ a {
 .department_content_one_head {
   width: 25%;
 }
+@media screen and (max-width: 768px) {
+  .department_content_one_head {
+    width: 80%;
+  }
+}
 .department_content_one_head_img {
   width: 60%;
+  min-width: 140px;
+  max-width: 210px;
   aspect-ratio: 5/3;
   margin-bottom: 20px;
   background-image: url(../../img/zibika.png);
@@ -1181,6 +1196,19 @@ a {
 .department_content_one_info {
   width: 70%;
 }
+@media screen and (max-width: 768px) {
+  .department_content_one_info {
+    width: 100%;
+  }
+}
+.department_content_one_info_doctor {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .department_content_one_info_doctor {
+    margin-top: 30px;
+  }
+}
 .department_content_one_info_doctor p {
   font-size: 2rem;
   font-weight: bold;
@@ -1190,6 +1218,11 @@ a {
 }
 .department_content_one_info_reception {
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .department_content_one_info_reception {
+    text-align: center;
+  }
 }
 .department_content_one_info_reception p {
   display: inline;

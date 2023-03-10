@@ -570,6 +570,12 @@
       box-shadow: 0 0 5px #938800;
       padding: 25px 50px;
       border-radius: 100px;
+      @include m.mq(sp) {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 5%;
+        border-radius: 70px;
+      }
       &:not(:first-child) {
         margin-top: 100px;
       }
@@ -598,8 +604,13 @@
 
       &_head {
         width: 25%;
+        @include m.mq(sp) {
+          width: 80%;
+        }
         &_img {
           width: 60%;
+          min-width: 140px;
+          max-width: 210px;
           aspect-ratio: 5/3;
           margin-bottom: 20px;
           background-image: url(../../img/zibika.png);
@@ -618,7 +629,14 @@
       }
       &_info {
         width: 70%;
+        @include m.mq(sp) {
+          width: 100%;
+        }
         &_doctor {
+          text-align: center;
+          @include m.mq(sp) {
+            margin-top: 30px;
+          }
           p {
             font-size: 2rem;
             font-weight: bold;
@@ -629,6 +647,9 @@
         }
         &_reception {
           margin-top: 20px;
+          @include m.mq(sp) {
+            text-align: center;
+          }
           p {
             display: inline;
             font-weight: bold;
