@@ -54,14 +54,19 @@ $(function () {
       let textbox = "";
       text.split("").forEach(function (t, i) {
         if (t !== " ") {
-          if (i < 10) {
+          if (i >= 0) {
             textbox +=
-              '<span style="animation-delay:.' + i + 's;">' + t + "</span>";
-          } else {
-            let n = i / 10;
-            textbox +=
-              '<span style="animation-delay:' + n + 's;">' + t + "</span>";
+              '<span style="animation-delay:' +
+              (i * 100 + 1000) +
+              'ms;">' +
+              t +
+              "</span>";
           }
+          // } else {
+          //   let n = i / 10;
+          //   textbox +=
+          //     '<span style="animation-delay:' + n + 's;">' + t + "</span>";
+          // }
           if (i === 6 || i === 14) {
             textbox += "<br>";
           }
@@ -91,5 +96,9 @@ $(function () {
     if (!$(this).hasClass("head")) {
       $(this).css({ "margin-left": "15px" });
     }
+  });
+  //load
+  $(window).on("load", function () {
+    $(".front_body").fadeIn(1500);
   });
 });

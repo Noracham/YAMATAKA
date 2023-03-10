@@ -14,6 +14,10 @@ body {
   overflow-x: hidden;
 }
 
+.front_body {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: #4f6a20;
@@ -433,7 +437,6 @@ a {
   color: #4f6a20;
   font-size: 3.7rem;
   z-index: 10;
-  text-shadow: 0 0 10px 3px #eee;
 }
 @media screen and (max-width: 768px) {
   .sub_title {
@@ -446,7 +449,7 @@ a {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #fff;
+  background: #eafced;
   left: 50%;
   top: -20px;
   z-index: -1;
