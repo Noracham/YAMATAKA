@@ -160,29 +160,28 @@
   }
 }
 /*---------- news ----------*/
-.news_back {
-  &::before {
-    cursor: pointer;
-    z-index: 2;
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100vw;
-    height: 600px;
-    background: $color-sub-green;
-  }
-  // &::after {
-  //   z-index: 1;
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   overflow-x: hidden;
-  //   border-style: solid;
-  //   border-width: 0 0 600px 270vw;
-  //   border-color: transparent transparent $color-green transparent;
-  // }
-}
+// .news_back {
+// &::before {
+//   cursor: pointer;
+//   z-index: 2;
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   width: 100vw;
+//   height: 700px;
+// }
+// &::after {
+//   z-index: 1;
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   overflow-x: hidden;
+//   border-style: solid;
+//   border-width: 0 0 600px 270vw;
+//   border-color: transparent transparent $color-green transparent;
+// }
+// }
 // .news_back2 {
 //   transition: all 0.5s;
 //   &::before {
@@ -211,12 +210,19 @@
 .news {
   &_content {
     width: 100vw;
+    height: 600px;
     max-width: 100vw;
     overflow-x: hidden;
+    @include m.mq(sp) {
+      height: 700px;
+    }
     &_new {
-      height: 600px;
+      height: auto;
       position: relative;
       width: 100vw;
+      height: 100%;
+      background: $color-sub-green;
+
       &_inner {
         position: relative;
         top: 70px;
@@ -249,6 +255,9 @@
           display: flex;
           flex-direction: column;
           padding-top: 75px;
+          @include m.mq(sp) {
+            padding-top: 100px;
+          }
           li {
             padding: 28px 0 28px 2%;
             border-top: 1px solid $color-text-green;
