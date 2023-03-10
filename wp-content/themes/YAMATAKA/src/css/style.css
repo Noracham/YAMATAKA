@@ -648,26 +648,26 @@ a {
 }
 
 /*---------- 診療科 ----------*/
-.department {
+.departmentM {
   padding-top: 0;
 }
-.department_content {
+.departmentM_content {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 1024px) {
-  .department_content {
+  .departmentM_content {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
-  .department_content {
+  .departmentM_content {
     flex-direction: column;
   }
 }
-.department_content_parts {
+.departmentM_content_parts {
   width: 27%;
   background: #fffdeb;
   box-shadow: 0 0 5px #938800;
@@ -678,20 +678,20 @@ a {
   transition: all 0.2s;
 }
 @media screen and (max-width: 1024px) {
-  .department_content_parts {
+  .departmentM_content_parts {
     margin: 0 3%;
     min-width: 270px;
   }
 }
 @media screen and (max-width: 768px) {
-  .department_content_parts:not(:first-child) {
+  .departmentM_content_parts:not(:first-child) {
     margin-top: 30px;
   }
 }
-.department_content_parts:hover {
+.departmentM_content_parts:hover {
   filter: brightness(90%);
 }
-.department_content_parts_img {
+.departmentM_content_parts_img {
   width: 60%;
   aspect-ratio: 5/3;
   margin-bottom: 20px;
@@ -699,32 +699,32 @@ a {
   background-position: center;
   background-size: contain;
 }
-.department_content_parts h1 {
+.departmentM_content_parts h1 {
   font-size: 4rem;
 }
-.department_content_parts p {
+.departmentM_content_parts p {
   font-size: 1.7rem;
 }
-.department_content_parts a {
+.departmentM_content_parts a {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
-.department_content_parts:nth-of-type(2) {
+.departmentM_content_parts:nth-of-type(2) {
   background: #f4fdfd;
   box-shadow: #006565 0 0 5px;
 }
-.department_content_parts:nth-of-type(2) .department_content_parts_img {
+.departmentM_content_parts:nth-of-type(2) .department_content_parts_img {
   background-image: url(../../img/ganka.png);
   background-size: cover;
 }
-.department_content_parts:nth-of-type(3) {
+.departmentM_content_parts:nth-of-type(3) {
   background: #fdf4fb;
   box-shadow: #760017 0 0 5px;
 }
-.department_content_parts:nth-of-type(3) .department_content_parts_img {
+.departmentM_content_parts:nth-of-type(3) .department_content_parts_img {
   background-image: url(../../img/naika.png);
 }
 
@@ -1114,4 +1114,61 @@ a {
 }
 .doctor_content_txt_one:last-child {
   margin-top: 20px;
+}
+
+/*---------- department page ----------*/
+.department {
+  width: 100vw;
+}
+.department_content_one {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #fffdeb;
+  box-shadow: 0 0 5px #938800;
+  padding: 25px 50px;
+  border-radius: 100px;
+}
+.department_content_one_head {
+  width: 25%;
+}
+.department_content_one_head_img {
+  width: 60%;
+  aspect-ratio: 5/3;
+  margin-bottom: 20px;
+  background-image: url(../../img/zibika.png);
+  background-position: center;
+  background-size: contain;
+}
+.department_content_one_head_txt {
+  text-align: center;
+}
+.department_content_one_head_txt h1 {
+  font-size: 4rem;
+}
+.department_content_one_head_txt p {
+  font-size: 1.7rem;
+}
+.department_content_one_info {
+  width: 70%;
+}
+.department_content_one_info_doctor p {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #ffce00;
+  padding: 15px 30px;
+  display: inline-block;
+}
+.department_content_one_info_reception {
+  margin-top: 20px;
+}
+.department_content_one_info_reception p {
+  display: inline;
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 2px solid #000;
+}
+.department_content_one_info_main {
+  margin-top: 30px;
+  font-size: 1.7rem;
 }/*# sourceMappingURL=style.css.map */

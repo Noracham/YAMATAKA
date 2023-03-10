@@ -85,7 +85,7 @@
   }
 }
 /*---------- 診療科 ----------*/
-.department {
+.departmentM {
   padding-top: 0;
   &_content {
     display: flex;
@@ -553,6 +553,66 @@
       &_one {
         &:last-child {
           margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+/*---------- department page ----------*/
+.department {
+  width: 100vw;
+  &_content {
+    &_one {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background: #fffdeb;
+      box-shadow: 0 0 5px #938800;
+      padding: 25px 50px;
+      border-radius: 100px;
+      &_head {
+        width: 25%;
+        &_img {
+          width: 60%;
+          aspect-ratio: 5/3;
+          margin-bottom: 20px;
+          background-image: url(../../img/zibika.png);
+          background-position: center;
+          background-size: contain;
+        }
+        &_txt {
+          text-align: center;
+          h1 {
+            font-size: 4rem;
+          }
+          p {
+            font-size: 1.7rem;
+          }
+        }
+      }
+      &_info {
+        width: 70%;
+        &_doctor {
+          p {
+            font-size: 2rem;
+            font-weight: bold;
+            background: #ffce00;
+            padding: 15px 30px;
+            display: inline-block;
+          }
+        }
+        &_reception {
+          margin-top: 20px;
+          p {
+            display: inline;
+            font-weight: bold;
+            font-size: 2rem;
+            border-bottom: 2px solid #000;
+          }
+        }
+        &_main {
+          margin-top: 30px;
+          font-size: 1.7rem;
         }
       }
     }

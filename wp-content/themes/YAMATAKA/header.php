@@ -72,7 +72,7 @@
             </div>
         <?php else :; ?>
             <section class="subpage_hero flex_center">
-                <h1>病院案内</h1>
+                <h1><?php the_title(); ?></h1>
             </section>
         <?php endif; ?>
     </section>
