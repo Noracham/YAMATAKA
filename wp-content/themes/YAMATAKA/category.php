@@ -3,12 +3,12 @@
     <div class="newspage_content inner">
         <div class="newspage_content_menu">
             <a href="" class="newspage_content_menu_new">新着情報</a>
-            <a href="" class="newspage_content_menu_important">大切なお知らせ</a>
+            <a href="" class="newspage_content_menu_important none">大切なお知らせ</a>
         </div>
         <div class="newspage_content_main">
             <ul class="newspage_content_main_list">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                        <li><span class="news_list_date"><?php the_time('Y/m/d'); ?></span><span class="news_list_tag"><?php the_field('newsTag'); ?></span>
+                        <li><a href="<?php the_permalink(); ?>"></a><span class="news_list_date"><?php the_time('Y/m/d'); ?></span><span class="news_list_tag"><?php the_field('newsTag'); ?></span>
                             <p class="news_list_txt"><?php the_title(); ?></p>
                         </li>
                 <?php endwhile;
@@ -17,8 +17,8 @@
             <?php
             $args = array(
                 'mid_size' => 1,
-                'prev_text' => '&lt;&lt;前へ',
-                'next_text' => '次へ&gt;&gt;',
+                'prev_text' => '&lt;',
+                'next_text' => '&gt;',
                 'screen_reader_text' => ' ',
             );
             the_posts_pagination($args);
