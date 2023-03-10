@@ -1200,11 +1200,9 @@ a {
     width: 100%;
   }
 }
-.department_content_one_info_doctor {
-  text-align: center;
-}
 @media screen and (max-width: 768px) {
   .department_content_one_info_doctor {
+    text-align: center;
     margin-top: 30px;
   }
 }

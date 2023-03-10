@@ -72,7 +72,8 @@
             </div>
         <?php else :; ?>
             <section class="subpage_hero flex_center">
-                <h1><?php the_title(); ?></h1>
+                <h1><?php is_category() ? $echo = "お知らせ" : $echo = the_title();
+                    echo $echo; ?></h1>
             </section>
         <?php endif; ?>
     </section>
