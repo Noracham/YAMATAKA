@@ -36,21 +36,21 @@
 <section class="departmentM wrapper">
     <div class="departmentM_content inner">
         <div class="departmentM_content_parts flex_center_column">
-            <a href="<?php echo esc_url(home_url()) ?>"></a>
+            <a href="<?php echo esc_url(home_url('/department/')) ?>#zibika"></a>
             <div class="departmentM_content_parts_img">
             </div>
             <h1>耳鼻科</h1>
             <p>耳や鼻に違和感を感じたら</p>
         </div>
         <div class="departmentM_content_parts flex_center_column">
-            <a href="<?php echo esc_url(home_url()) ?>"></a>
+            <a href="<?php echo esc_url(home_url('/department/')) ?>#ganka"></a>
             <div class="departmentM_content_parts_img">
             </div>
             <h1>眼科</h1>
             <p>目に違和感を感じたら</p>
         </div>
         <div class="departmentM_content_parts flex_center_column">
-            <a href="<?php echo esc_url(home_url()) ?>"></a>
+            <a href="<?php echo esc_url(home_url('/department/')) ?>#naika"></a>
             <div class="departmentM_content_parts_img">
             </div>
             <h1>内科</h1>

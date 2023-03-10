@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="department wrapper">
     <div class="department_content inner flex_column">
-        <div class="department_content_one">
+        <div class="department_content_one" id="zibika">
             <div class="department_content_one_head flex_center_column">
                 <div class="department_content_one_head_img">
                 </div>
@@ -25,7 +25,7 @@
                 </p>
             </div>
         </div>
-        <div class="department_content_one">
+        <div class="department_content_one" id="ganka">
             <div class="department_content_one_head flex_center_column">
                 <div class="department_content_one_head_img">
                 </div>
@@ -49,7 +49,7 @@
                 </p>
             </div>
         </div>
-        <div class="department_content_one">
+        <div class="department_content_one" id="naika">
             <div class="department_content_one_head flex_center_column">
                 <div class="department_content_one_head_img">
                 </div>
