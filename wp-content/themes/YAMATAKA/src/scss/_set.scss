@@ -498,3 +498,38 @@ a {
     }
   }
 }
+.hospital_info {
+  width: 100vw;
+  height: auto;
+  &_content {
+    width: 100%;
+    aspect-ratio: 3/2;
+    background-image: url("../../img/hospital_page_info.jpg");
+    background-position: center;
+    background-size: cover;
+    &_arrow {
+      &_title {
+        position: relative;
+        display: inline-block;
+        background: $color-green;
+        padding: 30px 50px;
+        font-size: 50px;
+        color: #fff;
+        font-weight: bold;
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          right: -99px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-top: 68px solid transparent;
+          border-bottom: 68px solid transparent;
+          border-left: 100px solid $color-green;
+          border-right: 0;
+        }
+      }
+    }
+  }
+}

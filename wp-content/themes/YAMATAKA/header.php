@@ -74,8 +74,14 @@
             <section class="subpage_hero flex_center">
                 <h1>病院案内</h1>
             </section>
-            <section class="hospital_info">
-
+            <section class="hospital_info wrapper">
+                <div class="hospital_info_content">
+                    <div class="hospital_info_content_arrow">
+                        <h1 class="hospital_info_content_arrow_title">「地域密着」×「距離感」</h1>
+                        <p class="hospital_info_content_arrow_subtitle">いつでもそばに</p>
+                        <p class="hospital_info_content_arrow_subtitle">いつでもあなたの健康を考えます</p>
+                    </div>
+                </div>
             </section>
         <?php endif; ?>
     </section>

@@ -547,6 +547,40 @@ a {
   }
 }
 
+.hospital_info {
+  width: 100vw;
+  height: auto;
+}
+.hospital_info_content {
+  width: 100%;
+  aspect-ratio: 3/2;
+  background-image: url("../../img/hospital_page_info.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.hospital_info_content_arrow_title {
+  position: relative;
+  display: inline-block;
+  background: #268e00;
+  padding: 30px 50px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+.hospital_info_content_arrow_title::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -99px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 68px solid transparent;
+  border-bottom: 68px solid transparent;
+  border-left: 100px solid #268e00;
+  border-right: 0;
+}
+
 /*---------- know ----------*/
 .know_content {
   display: flex;
