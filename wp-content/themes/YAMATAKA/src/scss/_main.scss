@@ -478,15 +478,33 @@
   }
 }
 .doctor {
+  &_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   &_content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    &:not(:first-child) {
+      margin-top: 55px;
+    }
+    @include m.mq(sp) {
+      display: flex;
+      flex-direction: column;
+    }
     &_human {
       width: 25%;
+      @include m.mq(tab) {
+        width: 35%;
+      }
+      @include m.mq(sp) {
+        min-width: 200px;
+      }
       &_img {
-        width: 95%;
+        width: 100%;
         height: auto;
         aspect-ratio: 5/6;
         img {
@@ -514,6 +532,13 @@
       background: $color-grey;
       border-radius: 10px;
       box-shadow: 5px 5px 1px #00000016;
+      @include m.mq(tab) {
+        width: 60%;
+      }
+      @include m.mq(sp) {
+        margin-top: 30px;
+        width: 100%;
+      }
       h3 {
         color: $color-text-green;
         font-size: 2rem;
