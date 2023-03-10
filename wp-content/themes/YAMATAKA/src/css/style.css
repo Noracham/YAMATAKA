@@ -255,6 +255,10 @@ a {
 }
 
 /*---------- hero ----------*/
+.sub_hero {
+  margin-bottom: 100px;
+}
+
 .hero {
   width: 100vw;
   height: calc(100vh + 15px);
@@ -264,6 +268,7 @@ a {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 .hero::after {
   content: "";
@@ -716,7 +721,7 @@ a {
   background: #f4fdfd;
   box-shadow: #006565 0 0 5px;
 }
-.departmentM_content_parts:nth-of-type(2) .department_content_parts_img {
+.departmentM_content_parts:nth-of-type(2) .departmentM_content_parts_img {
   background-image: url(../../img/ganka.png);
   background-size: cover;
 }
@@ -724,7 +729,7 @@ a {
   background: #fdf4fb;
   box-shadow: #760017 0 0 5px;
 }
-.departmentM_content_parts:nth-of-type(3) .department_content_parts_img {
+.departmentM_content_parts:nth-of-type(3) .departmentM_content_parts_img {
   background-image: url(../../img/naika.png);
 }
 
@@ -1128,6 +1133,30 @@ a {
   box-shadow: 0 0 5px #938800;
   padding: 25px 50px;
   border-radius: 100px;
+}
+.department_content_one:not(:first-child) {
+  margin-top: 100px;
+}
+.department_content_one:nth-of-type(2) {
+  background: #f4fdfd;
+  box-shadow: #006565 0 0 5px;
+}
+.department_content_one:nth-of-type(2) .department_content_one_head_img {
+  background-image: url(../../img/ganka.png);
+  background-size: cover;
+}
+.department_content_one:nth-of-type(2) .department_content_one_info_doctor p {
+  background: #00b1ff;
+}
+.department_content_one:nth-of-type(3) {
+  background: #fdf4fb;
+  box-shadow: #760017 0 0 5px;
+}
+.department_content_one:nth-of-type(3) .department_content_one_head_img {
+  background-image: url(../../img/naika.png);
+}
+.department_content_one:nth-of-type(3) .department_content_one_info_doctor p {
+  background: #fa8abe;
 }
 .department_content_one_head {
   width: 25%;

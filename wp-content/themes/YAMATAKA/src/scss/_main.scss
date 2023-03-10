@@ -143,7 +143,7 @@
       &:nth-of-type(2) {
         background: #f4fdfd;
         box-shadow: #006565 0 0 5px;
-        .department_content_parts_img {
+        .departmentM_content_parts_img {
           background-image: url(../../img/ganka.png);
           background-size: cover;
         }
@@ -151,7 +151,7 @@
       &:nth-of-type(3) {
         background: #fdf4fb;
         box-shadow: #760017 0 0 5px;
-        .department_content_parts_img {
+        .departmentM_content_parts_img {
           background-image: url(../../img/naika.png);
           // background-size: cover;
         }
@@ -570,6 +570,32 @@
       box-shadow: 0 0 5px #938800;
       padding: 25px 50px;
       border-radius: 100px;
+      &:not(:first-child) {
+        margin-top: 100px;
+      }
+      &:nth-of-type(2) {
+        background: #f4fdfd;
+        box-shadow: #006565 0 0 5px;
+        .department_content_one_head_img {
+          background-image: url(../../img/ganka.png);
+          background-size: cover;
+        }
+        .department_content_one_info_doctor p {
+          background: #00b1ff;
+        }
+      }
+      &:nth-of-type(3) {
+        background: #fdf4fb;
+        box-shadow: #760017 0 0 5px;
+        .department_content_one_head_img {
+          background-image: url(../../img/naika.png);
+          // background-size: cover;
+        }
+        .department_content_one_info_doctor p {
+          background: #fa8abe;
+        }
+      }
+
       &_head {
         width: 25%;
         &_img {
