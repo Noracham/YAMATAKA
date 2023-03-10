@@ -573,11 +573,15 @@ a {
   }
 }
 .hospital_info_content_arrow {
-  overflow-x: hidden;
   padding-top: 25px;
 }
 .hospital_info_content_arrow div:not(:first-child) {
   padding-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hospital_info_content_arrow {
+    overflow-x: hidden;
+  }
 }
 .hospital_info_content_arrow_title {
   position: relative;
@@ -598,7 +602,7 @@ a {
   position: absolute;
   content: "";
   top: 0;
-  right: -86px;
+  right: -99px;
   width: 0;
   height: 0;
   border-style: solid;

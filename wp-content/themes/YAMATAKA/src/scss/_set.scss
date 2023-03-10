@@ -518,12 +518,14 @@ a {
       width: 100%;
     }
     &_arrow {
-      overflow-x: hidden;
       padding-top: 25px;
       div {
         &:not(:first-child) {
           padding-top: 10px;
         }
+      }
+      @include m.mq(sp) {
+        overflow-x: hidden;
       }
       &_title {
         position: relative;
@@ -541,7 +543,7 @@ a {
           position: absolute;
           content: "";
           top: 0;
-          right: -86px;
+          right: -99px;
           width: 0;
           height: 0;
           border-style: solid;
