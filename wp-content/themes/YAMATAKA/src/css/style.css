@@ -561,7 +561,19 @@ a {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 1024px) {
+  .hospital_info_content {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hospital_info_content {
+    background-position: 75% center;
+    width: 100%;
+  }
+}
 .hospital_info_content_arrow {
+  overflow-x: hidden;
   padding-top: 25px;
 }
 .hospital_info_content_arrow div:not(:first-child) {
@@ -572,15 +584,21 @@ a {
   display: inline-block;
   background: #268e00;
   padding: 30px 50px;
-  font-size: 50px;
+  font-size: 5rem;
   color: #fff;
   font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .hospital_info_content_arrow_title {
+    font-size: 2.7rem;
+    padding: 30px 0;
+  }
 }
 .hospital_info_content_arrow_title::after {
   position: absolute;
   content: "";
   top: 0;
-  right: -99px;
+  right: -86px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -588,6 +606,14 @@ a {
   border-bottom: 68px solid transparent;
   border-left: 100px solid #268e00;
   border-right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .hospital_info_content_arrow_title::after {
+    right: -29px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #268e00;
+  }
 }
 .hospital_info_content_arrow_subtitle {
   position: relative;
@@ -597,6 +623,12 @@ a {
   font-size: 3rem;
   color: #fff;
   font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .hospital_info_content_arrow_subtitle {
+    font-size: 2rem;
+    padding: 20px 15px;
+  }
 }
 .hospital_info_content_arrow_subtitle::after {
   position: absolute;
@@ -611,10 +643,25 @@ a {
   border-right: 0;
   content: "";
 }
+@media screen and (max-width: 1024px) {
+  .hospital_info_content_arrow_subtitle::after {
+    right: -19px;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 20px solid #1b5d00;
+  }
+}
 .hospital_info_content .circle_wrapper {
   position: absolute;
   bottom: 10%;
   left: 5%;
+}
+@media screen and (max-width: 768px) {
+  .hospital_info_content .circle_wrapper {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .hospital_info_content_circle {
   width: 350px;
@@ -623,6 +670,16 @@ a {
   bottom: 0;
   color: #4f6a20;
   z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .hospital_info_content_circle {
+    width: 95vw;
+    height: 95vw;
+    max-width: 330px;
+    max-height: 330px;
+    min-width: 280px;
+    min-height: 280px;
+  }
 }
 .hospital_info_content_circle::after {
   position: absolute;
@@ -647,6 +704,11 @@ a {
   font-size: 1.7rem;
   line-height: 4rem;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .hospital_info_content_circle p {
+    font-size: 1.5rem;
+  }
 }
 
 /*---------- know ----------*/

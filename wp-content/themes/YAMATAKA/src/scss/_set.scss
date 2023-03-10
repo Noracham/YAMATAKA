@@ -511,8 +511,14 @@ a {
     background-position: center;
     background-size: cover;
     @include m.mq(tab) {
+      width: 95%;
+    }
+    @include m.mq(sp) {
+      background-position: 75% center;
+      width: 100%;
     }
     &_arrow {
+      overflow-x: hidden;
       padding-top: 25px;
       div {
         &:not(:first-child) {
@@ -524,14 +530,18 @@ a {
         display: inline-block;
         background: $color-green;
         padding: 30px 50px;
-        font-size: 50px;
+        font-size: 5rem;
         color: #fff;
         font-weight: bold;
+        @include m.mq(tab) {
+          font-size: 2.7rem;
+          padding: 30px 0;
+        }
         &::after {
           position: absolute;
           content: "";
           top: 0;
-          right: -99px;
+          right: -86px;
           width: 0;
           height: 0;
           border-style: solid;
@@ -539,6 +549,12 @@ a {
           border-bottom: 68px solid transparent;
           border-left: 100px solid $color-green;
           border-right: 0;
+          @include m.mq(tab) {
+            right: -29px;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid $color-green;
+          }
         }
       }
       &_subtitle {
@@ -549,6 +565,10 @@ a {
         font-size: 3rem;
         color: #fff;
         font-weight: bold;
+        @include m.mq(tab) {
+          font-size: 2rem;
+          padding: 20px 15px;
+        }
         &::after {
           position: absolute;
           right: -73px;
@@ -561,6 +581,12 @@ a {
           border-left: 74px solid $color-deep-green;
           border-right: 0;
           content: "";
+          @include m.mq(tab) {
+            right: -19px;
+            border-top: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+            border-left: 20px solid $color-deep-green;
+          }
         }
       }
     }
@@ -568,6 +594,11 @@ a {
       position: absolute;
       bottom: 10%;
       left: 5%;
+      @include m.mq(sp) {
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     &_circle {
       width: 350px;
@@ -576,6 +607,14 @@ a {
       bottom: 0;
       color: $color-text-green;
       z-index: 1;
+      @include m.mq(sp) {
+        width: 95vw;
+        height: 95vw;
+        max-width: 330px;
+        max-height: 330px;
+        min-width: 280px;
+        min-height: 280px;
+      }
       &::after {
         position: absolute;
         content: "";
@@ -599,6 +638,9 @@ a {
         font-size: 1.7rem;
         line-height: 4rem;
         text-align: center;
+        @include m.mq(sp) {
+          font-size: 1.5rem;
+        }
       }
     }
   }
