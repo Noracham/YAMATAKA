@@ -672,6 +672,14 @@
       font-size: 2.5rem;
       font-weight: bold;
       margin-left: 20px;
+      @include m.mq(sp) {
+        font-size: 1.7rem;
+        height: 46px;
+        &_important {
+          font-size: 1.5rem;
+          height: 46px;
+        }
+      }
       a {
         border-radius: 10px 10px 0 0;
         padding: 17px 0;
@@ -680,6 +688,10 @@
         width: 300px;
         text-align: center;
         color: #fff;
+        @include m.mq(sp) {
+          padding: 10px 0;
+          width: 135px;
+        }
       }
       .none {
         opacity: 0.7;
@@ -689,6 +701,9 @@
       padding: 100px;
       border-radius: 20px;
       border: 3px solid $color-deep-green;
+      @include m.mq(sp) {
+        padding: 30px 5%;
+      }
       &_list {
         li {
           position: relative;
@@ -699,6 +714,9 @@
           color: $color-text-green;
           font-size: 1.7rem;
           transition: all 0.2s;
+          @include m.mq(sp) {
+            font-size: 1.4rem;
+          }
           &:last-child {
             border-bottom: 1px solid $color-text-green;
           }
@@ -724,6 +742,10 @@
           border-radius: 10px;
           background: $color-green;
           margin: 0 20px;
+          @include m.mq(sp) {
+            font-size: 1.2rem;
+            margin: 5px 10px;
+          }
         }
       }
     }

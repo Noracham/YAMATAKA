@@ -28,6 +28,10 @@ a {
   max-width: 1100px;
   padding-left: 15px;
   padding-right: 15px;
+  @include m.mq(sp) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .flex {
   display: flex;
@@ -233,9 +237,9 @@ a {
   }
 }
 /*---------- hero ----------*/
-.sub_hero {
-  margin-bottom: 100px;
-}
+// .sub_hero {
+//   margin-bottom: 100px;
+// }
 .hero {
   width: 100vw;
   height: calc(100vh + 15px);
