@@ -77,11 +77,27 @@
             <section class="hospital_info wrapper">
                 <div class="hospital_info_content">
                     <div class="hospital_info_content_arrow">
-                        <h1 class="hospital_info_content_arrow_title">「地域密着」×「距離感」</h1>
-                        <p class="hospital_info_content_arrow_subtitle">いつでもそばに</p>
-                        <p class="hospital_info_content_arrow_subtitle">いつでもあなたの健康を考えます</p>
+                        <div>
+                            <h1 class="hospital_info_content_arrow_title">「地域密着」×「距離感」</h1>
+                        </div>
+                        <div>
+                            <p class="hospital_info_content_arrow_subtitle">いつでもそばに</p>
+                        </div>
+                        <div>
+                            <p class="hospital_info_content_arrow_subtitle">いつでもあなたの健康を考えます</p>
+                        </div>
+                    </div>
+                    <div class="circle_wrapper">
+                        <div class="hospital_info_content_circle flex_center_column">
+                            <h3>みなさまと共に歩む</h3>
+                            <p>地域の方々と共に歩んでいく病院。<br>
+                                あなたの健康を真剣に考えます。</p>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <section class="docter wrapper">
+                <div class="docter_content inner"></div>
             </section>
         <?php endif; ?>
     </section>
