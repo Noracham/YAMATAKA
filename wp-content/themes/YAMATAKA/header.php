@@ -15,8 +15,8 @@
         <nav class="header_nav">
             <div class="header_nav_sp"><span></span><span></span><span></span></div>
             <ul class="header_nav_list">
-                <li><a href="<?php echo esc_url(home_url('/department/')); ?>">診療科案内</a></li>
                 <li><a href="<?php echo esc_url(home_url('/hospital/')); ?>">病院案内</a></li>
+                <li><a href="<?php echo esc_url(home_url('/department/')); ?>">診療科案内</a></li>
                 <li><a href="<?php echo esc_url(home_url('/category/news/')); ?>">お知らせ</a></li>
                 <li><a href="#access">アクセス</a></li>
                 <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
@@ -71,6 +71,11 @@
                 </div>
             </div>
         <?php else :; ?>
-            aa
+            <section class="subpage_hero flex_center">
+                <h1>病院案内</h1>
+            </section>
+            <section class="hospital_info">
+
+            </section>
         <?php endif; ?>
     </section>

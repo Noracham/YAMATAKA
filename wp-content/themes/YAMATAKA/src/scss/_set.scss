@@ -478,3 +478,17 @@ a {
     bottom: 15px;
   }
 }
+/*---------- subpage hero ----------*/
+.subpage_hero {
+  width: 100vw;
+  height: 400px;
+  background-image: url("../../img/subpage_header.jpg");
+  background-size: cover;
+  background-position: center;
+  h1 {
+    padding-top: 75px;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 3px #848484;
+  }
+}
