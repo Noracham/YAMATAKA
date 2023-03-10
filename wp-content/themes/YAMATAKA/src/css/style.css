@@ -102,6 +102,14 @@ a {
 .header_img {
   width: auto;
   height: 80%;
+  position: relative;
+}
+.header_img a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .header_img img {
   width: auto;

@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <div class="header_img"><img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')); ?>" alt="logo"></div>
+        <div class="header_img"><a href="<?php echo esc_url(home_url()); ?>"></a><img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')); ?>" alt="logo"></div>
         <nav class="header_nav">
             <div class="header_nav_sp"><span></span><span></span><span></span></div>
             <ul class="header_nav_list">
