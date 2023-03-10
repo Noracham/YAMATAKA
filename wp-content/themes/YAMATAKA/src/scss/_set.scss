@@ -485,10 +485,16 @@ a {
   background-image: url("../../img/subpage_header.jpg");
   background-size: cover;
   background-position: center;
+  @include m.mq(sp) {
+    height: 100vh;
+  }
   h1 {
     padding-top: 75px;
     font-size: 4rem;
     color: #fff;
     text-shadow: 0 0 3px #848484;
+    @include m.mq(sp) {
+      padding-top: 70px;
+    }
   }
 }

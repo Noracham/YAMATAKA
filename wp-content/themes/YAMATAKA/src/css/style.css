@@ -530,11 +530,21 @@ a {
   background-size: cover;
   background-position: center;
 }
+@media screen and (max-width: 768px) {
+  .subpage_hero {
+    height: 100vh;
+  }
+}
 .subpage_hero h1 {
   padding-top: 75px;
   font-size: 4rem;
   color: #fff;
   text-shadow: 0 0 3px #848484;
+}
+@media screen and (max-width: 768px) {
+  .subpage_hero h1 {
+    padding-top: 70px;
+  }
 }
 
 /*---------- know ----------*/
