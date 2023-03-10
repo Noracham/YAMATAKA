@@ -72,7 +72,7 @@
                         ];
                         $query = new WP_Query($args);
                         if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-                                <li><span class="news_list_date"><?php the_time('Y/m/d'); ?></span><span class="news_list_tag"><?php the_field('newsTag'); ?></span>
+                                <li><a href="<?php echo esc_url(the_permalink()); ?>"></a><span class="news_list_date"><?php the_time('Y/m/d'); ?></span><span class="news_list_tag"><?php the_field('newsTag'); ?></span>
                                     <p class="news_list_txt"><?php the_title(); ?></p>
                                 </li>
                         <?php endwhile;
