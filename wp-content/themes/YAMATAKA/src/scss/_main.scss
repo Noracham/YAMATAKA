@@ -782,3 +782,71 @@
     margin-right: 10px;
   }
 }
+/*---------- 個別投稿ページ single ----------*/
+.article {
+  padding-left: 15px;
+  padding-right: 15px;
+  @include m.mq(sp) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  &_content {
+    padding: 0;
+    border-radius: 20px;
+    border: 3px solid $color-deep-green;
+    &_head {
+      padding: 30px 30px 45px 30px;
+      background: $color-deep-green;
+      color: #fff;
+      border-radius: 10px 10px 0 0;
+      &_top {
+        font-size: 1.7rem;
+        span {
+          &:nth-child(2) {
+            margin-left: 10px;
+            padding: 7px 6px;
+            background: $color-green;
+            font-size: 1.4rem;
+            border-radius: 5px;
+            vertical-align: middle;
+          }
+        }
+      }
+      h1 {
+        margin-top: 10px;
+        font-size: 3rem;
+      }
+    }
+    &_main {
+      padding: 50px 7%;
+      font-size: 1.7rem;
+    }
+  }
+}
+/*---------- single page pagination ----------*/
+.single_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &_back {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: $color-green;
+    margin: 0 10px;
+    a {
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+  &_link {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: $color-deep-green;
+    a {
+      color: #fff;
+      font-size: 1.6rem;
+    }
+  }
+}

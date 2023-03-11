@@ -1358,4 +1358,74 @@ a {
 }
 .nav-links .page-numbers {
   margin-right: 10px;
+}
+
+/*---------- 個別投稿ページ single ----------*/
+.article {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  .article {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.article_content {
+  padding: 0;
+  border-radius: 20px;
+  border: 3px solid #1b5d00;
+}
+.article_content_head {
+  padding: 30px 30px 45px 30px;
+  background: #1b5d00;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+.article_content_head_top {
+  font-size: 1.7rem;
+}
+.article_content_head_top span:nth-child(2) {
+  margin-left: 10px;
+  padding: 7px 6px;
+  background: #268e00;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.article_content_head h1 {
+  margin-top: 10px;
+  font-size: 3rem;
+}
+.article_content_main {
+  padding: 50px 7%;
+  font-size: 1.7rem;
+}
+
+/*---------- single page pagination ----------*/
+.single_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.single_pagination_back {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #268e00;
+  margin: 0 10px;
+}
+.single_pagination_back a {
+  color: #fff;
+  font-size: 2rem;
+}
+.single_pagination_link {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #1b5d00;
+}
+.single_pagination_link a {
+  color: #fff;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */
