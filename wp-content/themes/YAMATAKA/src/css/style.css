@@ -1415,15 +1415,13 @@ a {
   color: #fff;
   font-size: 2rem;
 }
-.single_pagination_link {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: #1b5d00;
-}
 .single_pagination_link a {
+  text-align: center;
+  padding: 23px 18.5px;
   color: #fff;
   font-size: 1.6rem;
+  border-radius: 50%;
+  background: #1b5d00;
 }
 
 /*---------- contact page ----------*/

@@ -840,13 +840,13 @@
     }
   }
   &_link {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: $color-deep-green;
     a {
+      text-align: center;
+      padding: 23px 18.5px;
       color: #fff;
       font-size: 1.6rem;
+      border-radius: 50%;
+      background: $color-deep-green;
     }
   }
 }
