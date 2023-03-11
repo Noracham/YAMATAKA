@@ -14,10 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-.front_body {
-  display: none;
-}
-
 a {
   text-decoration: none;
   color: #4f6a20;

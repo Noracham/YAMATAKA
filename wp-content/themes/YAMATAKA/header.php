@@ -20,7 +20,7 @@
                 <li><a href="<?php echo esc_url(home_url('/hospital/')); ?>">病院案内</a></li>
                 <li><a href="<?php echo esc_url(home_url('/department/')); ?>">診療科案内</a></li>
                 <li><a href="<?php echo esc_url(home_url('/category/news/')); ?>">お知らせ</a></li>
-                <li><a href="#access">アクセス</a></li>
+                <li><a href="<?php echo esc_url(home_url()); ?>#access">アクセス</a></li>
                 <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></li>
             </ul>
         </nav>
@@ -74,7 +74,7 @@
             </div>
         <?php else :; ?>
             <section class="subpage_hero flex_center">
-                <h1><?php is_category() ? $echo = "お知らせ" : $echo = the_title();
+                <h1><?php is_category() || is_single() ? $echo = "お知らせ" : $echo = the_title();
                     echo $echo; ?></h1>
             </section>
         <?php endif; ?>

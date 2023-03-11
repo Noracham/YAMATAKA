@@ -98,7 +98,7 @@ $(function () {
     }
   });
   //load
-  $(window).on("load", function () {
-    $(".front_body").fadeIn(1500);
-  });
+  // $(window).on("load", function () {
+  //   $(".front_body").fadeIn(1500);
+  // });
 });

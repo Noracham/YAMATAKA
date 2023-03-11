@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="hospital_info wrapper">
+<section class="hospital_info wrapper" id="info">
     <div class="hospital_info_content">
         <div class="hospital_info_content_arrow">
             <div>
@@ -21,7 +21,7 @@
         </div>
     </div>
 </section>
-<section class="doctor wrapper">
+<section class="doctor wrapper" id="doctor">
     <div class="doctor_inner inner">
         <div class="doctor_content">
             <div class="doctor_content_human">
