@@ -1474,12 +1474,14 @@ a {
   width: 20%;
   border: 1px solid #000;
   border-radius: 5px;
+  min-width: 200px;
 }
 .contactform_one_tel {
   height: 30px;
   width: 20%;
   border: 1px solid #000;
   border-radius: 5px;
+  min-width: 200px;
 }
 .contactform_one_mail {
   height: 30px;
