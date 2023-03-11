@@ -5,7 +5,7 @@
         <div class="careful_content_txt">
             <p>ご予約や緊急を有する場合は必ず</p>
             <p class="careful_content_txt_tel">「0577-00-0000」</p>
-            <p>こちらまでお電話いただけますようよろしくお願いいたします。</p>
+            <p class="careful_content_txt_main">こちらまでお電話いただけますようよろしくお願いいたします。</p>
         </div>
     </div>
 </section>

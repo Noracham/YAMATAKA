@@ -101,4 +101,15 @@ $(function () {
   // $(window).on("load", function () {
   //   $(".front_body").fadeIn(1500);
   // });
+
+  //レスポンシブ注意書き
+  $(window).resize(function () {
+    $nowWidth = $(".careful_content_txt_main").width();
+
+    if ($nowWidth < 768) {
+      $(".careful_content_txt_main").html(
+        '<p class="careful_content_txt_main">こちらまでお電話いただけますよう<br>よろしくお願いいたします。</p>'
+      );
+    }
+  });
 });
