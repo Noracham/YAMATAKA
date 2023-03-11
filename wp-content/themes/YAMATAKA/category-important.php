@@ -2,8 +2,8 @@
 <section class="newspage wrapper">
     <div class="newspage_content inner">
         <div class="newspage_content_menu">
-            <a href="<?php echo esc_url(home_url('/category/news')); ?>" class="newspage_content_menu_new">新着情報</a>
-            <a href="<?php echo esc_url(home_url('/category/important')); ?>" class="newspage_content_menu_important none">大切なお知らせ</a>
+            <a href="<?php echo esc_url(home_url('/category/news')); ?>" class="newspage_content_menu_new none">新着情報</a>
+            <a href="<?php echo esc_url(home_url('/category/important')); ?>" class="newspage_content_menu_important">大切なお知らせ</a>
         </div>
         <div class="newspage_content_main">
             <ul class="newspage_content_main_list">
@@ -11,7 +11,8 @@
                         <li><a href="<?php the_permalink(); ?>"></a><span class="news_list_date"><?php the_time('Y/m/d'); ?></span><span class="news_list_tag"><?php the_field('newsTag'); ?></span>
                             <p class="news_list_txt"><?php the_title(); ?></p>
                         </li>
-                <?php endwhile;
+                <?php
+                    endwhile;
                 endif; ?>
             </ul>
             <?php
