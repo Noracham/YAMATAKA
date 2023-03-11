@@ -850,3 +850,101 @@
     }
   }
 }
+/*---------- contact page ----------*/
+.careful {
+  width: 100vw;
+  padding: 50px 0;
+  background: #fffeed;
+  border-bottom: 5px solid #fca500;
+  border-top: 5px solid #fca500;
+  margin: 85px 0;
+  &_content {
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      img {
+        vertical-align: middle;
+        margin-bottom: 10px;
+      }
+    }
+    &_txt {
+      margin-top: 45px;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold;
+      &_tel {
+        margin: 30px 0;
+        font-size: 4rem;
+        color: #fca500;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+.contactform {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+  h3 {
+    font-size: 2rem;
+    color: $color-text-green;
+  }
+  &_one {
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+    &_name {
+      height: 30px;
+      width: 20%;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+    &_tel {
+      height: 30px;
+      width: 20%;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+    &_mail {
+      height: 30px;
+      border: 1px solid #000;
+      border-radius: 5px;
+      width: 40%;
+      min-width: 250px;
+    }
+    &_kind {
+      font-size: 1.7rem;
+    }
+    &_text {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+  }
+  &_submit {
+    width: 200px;
+    padding: 10px 0;
+    font-size: 2rem;
+    border-radius: 5px;
+    background: $color-deep-green;
+    margin: 25px auto 0 auto;
+    p {
+      display: flex;
+      justify-content: center;
+    }
+    input {
+      color: #fff;
+    }
+    .wpcf7-spinner {
+      display: none;
+    }
+  }
+}
+.wpcf7-response-output {
+  font-size: 1.7rem;
+  text-align: center;
+  background: $color-sub-green;
+  border: 2px solid $color-green !important;
+  border-radius: 5px;
+}
