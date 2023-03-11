@@ -885,6 +885,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
+  font-size: 1.5rem;
   h3 {
     font-size: 2rem;
     color: $color-text-green;
@@ -913,6 +914,9 @@
       min-width: 250px;
     }
     &_kind {
+      font-size: 1.7rem;
+    }
+    &_ok {
       font-size: 1.7rem;
     }
     &_text {

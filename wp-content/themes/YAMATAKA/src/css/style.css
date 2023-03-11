@@ -1460,6 +1460,7 @@ a {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
+  font-size: 1.5rem;
 }
 .contactform h3 {
   font-size: 2rem;
@@ -1488,6 +1489,9 @@ a {
   min-width: 250px;
 }
 .contactform_one_kind {
+  font-size: 1.7rem;
+}
+.contactform_one_ok {
   font-size: 1.7rem;
 }
 .contactform_one_text {
