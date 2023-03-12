@@ -4,6 +4,7 @@
 /*---------- know ----------*/
 .know {
   &_content {
+    opacity: 0;
     display: flex;
     justify-content: space-between;
     max-width: 1280px;
@@ -88,6 +89,7 @@
 .departmentM {
   padding-top: 0;
   &_content {
+    opacity: 0;
     display: flex;
     justify-content: space-between;
     @include m.mq(tab) {

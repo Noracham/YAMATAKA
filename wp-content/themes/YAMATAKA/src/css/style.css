@@ -560,8 +560,28 @@ a {
   }
 }
 
+/*---------- inview animation ----------*/
+.animation_opacity {
+  opacity: 0;
+}
+
+.top_to_bottom {
+  animation: top_to_bottom 1s forwards;
+}
+@keyframes top_to_bottom {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*---------- know ----------*/
 .know_content {
+  opacity: 0;
   display: flex;
   justify-content: space-between;
   max-width: 1280px;
@@ -657,6 +677,7 @@ a {
   padding-top: 0;
 }
 .departmentM_content {
+  opacity: 0;
   display: flex;
   justify-content: space-between;
 }

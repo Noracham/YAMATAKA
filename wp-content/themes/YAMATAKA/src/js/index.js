@@ -112,4 +112,12 @@ $(function () {
       );
     }
   });
+
+  //inview スクロールイベント
+  $(".know_content").one("inview", function () {
+    $(this).addClass("top_to_bottom");
+  });
+  $(".departmentM_content").one("inview", function (e) {
+    $(this).addClass("top_to_bottom");
+  });
 });

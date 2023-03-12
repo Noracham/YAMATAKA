@@ -515,3 +515,20 @@ a {
     }
   }
 }
+/*---------- inview animation ----------*/
+.animation_opacity {
+  opacity: 0;
+}
+.top_to_bottom {
+  animation: top_to_bottom 1s forwards;
+  @keyframes top_to_bottom {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
