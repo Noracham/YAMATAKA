@@ -78,7 +78,7 @@
                         <?php endwhile;
                         endif; ?>
                     </ul>
-                    <a class="viewmore" href="<?php echo esc_url(home_url('/category/news/')); ?>">続きを見る<img src="<?php echo esc_url(get_theme_file_uri('img/Icon material-navigate-next.svg')); ?>" alt=""></a>
+                    <a class="viewmore" href="<?php echo esc_url(home_url('/category/news/')); ?>">続きを見る<img class="viewmore_img" src="<?php echo esc_url(get_theme_file_uri('img/Icon material-navigate-next.svg')); ?>" alt=""></a>
                 </div>
             </div>
         </div>

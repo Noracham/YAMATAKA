@@ -108,7 +108,7 @@
       border-radius: 100px;
       aspect-ratio: 1/1;
       position: relative;
-      transition: all 0.2s;
+      transition: all 0.4s;
       @include m.mq(tab) {
         margin: 0 3%;
         min-width: 270px;
@@ -120,6 +120,7 @@
       }
       &:hover {
         filter: brightness(90%);
+        transform: scale(0.95);
       }
       &_img {
         width: 60%;
@@ -220,6 +221,19 @@
     }
     .viewmore {
       opacity: 0;
+      position: absolute;
+      right: 0;
+      bottom: -5rem;
+      font-size: 2rem;
+      font-weight: bold;
+      transition: all 0.5s;
+      img {
+        padding-left: 10px;
+        margin-bottom: -2px;
+      }
+      &:hover {
+        right: -10px;
+      }
     }
     &_new {
       height: auto;
@@ -243,17 +257,6 @@
           margin: 0 auto;
           @include m.mq(tab) {
             max-width: 650px;
-          }
-          a {
-            position: absolute;
-            right: 0;
-            bottom: -5rem;
-            font-size: 2rem;
-            font-weight: bold;
-            img {
-              padding-left: 10px;
-              margin-bottom: -2px;
-            }
           }
         }
         .news_list {
@@ -293,12 +296,19 @@
             }
           }
           &_tag {
+            text-align: center;
+            min-width: 70px;
             font-size: 1.4rem;
             padding: 4px 6px;
             color: #fff;
             border-radius: 10px;
             background: $color-green;
             margin: 0 20px;
+            @include m.mq(sp) {
+              min-width: 60px;
+              font-size: 1.2rem;
+              margin: 5px 10px;
+            }
           }
         }
       }

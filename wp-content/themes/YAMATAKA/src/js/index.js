@@ -57,7 +57,7 @@ $(function () {
           if (i >= 0) {
             textbox +=
               '<span style="animation-delay:' +
-              (i * 100 + 1000) +
+              (i * 100 + 500) +
               'ms;">' +
               t +
               "</span>";
@@ -98,9 +98,9 @@ $(function () {
     }
   });
   //load
-  // $(window).on("load", function () {
-  //   $(".front_body").fadeIn(1500);
-  // });
+  $(window).on("load", function () {
+    $(".front_body").fadeIn(1500);
+  });
 
   //レスポンシブ注意書き
   $(window).resize(function () {

@@ -9,9 +9,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php if (is_front_page() || is_home()) {
-            echo "class='front_body'";
-        } ?>>
+<body>
     <header class="header">
         <div class="header_img"><a href="<?php echo esc_url(home_url()); ?>"></a><img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')); ?>" alt="logo"></div>
         <nav class="header_nav">
