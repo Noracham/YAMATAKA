@@ -10,7 +10,6 @@ html {
 
 body {
   font-size: 62.5%;
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -950,6 +949,7 @@ a {
   height: auto;
 }
 .hospital_info_content {
+  overflow-x: hidden;
   position: relative;
   width: 80%;
   min-height: 850px;

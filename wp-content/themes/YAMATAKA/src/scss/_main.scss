@@ -363,6 +363,7 @@
   width: 100vw;
   height: auto;
   &_content {
+    overflow-x: hidden;
     position: relative;
     width: 80%;
     min-height: 850px;
