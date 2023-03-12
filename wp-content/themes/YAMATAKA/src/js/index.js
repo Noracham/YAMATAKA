@@ -115,9 +115,15 @@ $(function () {
 
   //inview スクロールイベント
   //クラスリスト
-  let LtoR = ["news_list", "viewmore", "access_content_info_txt"];
-  let TtoB = ["know_content", "departmentM_content"];
-  let opa_bl = ["sub_title", "access_content_map"];
+  let LtoR = [
+    "news_list",
+    "viewmore",
+    "access_content_info_txt",
+    "department_content_one",
+    "hospital_info_content_arrow div",
+  ];
+  let TtoB = ["know_content", "departmentM_content", "doctor_content"];
+  let opa_bl = ["sub_title", "access_content_map", "circle_wrapper"];
 
   //left to right
   $.each(LtoR, function (i, v) {
