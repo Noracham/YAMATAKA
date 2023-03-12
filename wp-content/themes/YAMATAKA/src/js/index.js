@@ -114,10 +114,34 @@ $(function () {
   });
 
   //inview スクロールイベント
-  $(".know_content").one("inview", function () {
-    $(this).addClass("top_to_bottom");
+  //クラスリスト
+  let LtoR = ["news_list", "viewmore", "access_content_info_txt"];
+  let TtoB = ["know_content", "departmentM_content"];
+  let opa_bl = ["sub_title", "access_content_map"];
+
+  //left to right
+  $.each(LtoR, function (i, v) {
+    let val = "." + v;
+
+    $(val).one("inview", function (e) {
+      $(this).addClass("left_to_right");
+    });
   });
-  $(".departmentM_content").one("inview", function (e) {
-    $(this).addClass("top_to_bottom");
+  //top to bottom
+  $.each(TtoB, function (i, v) {
+    let val = "." + v;
+
+    $(val).one("inview", function (e) {
+      $(this).addClass("top_to_bottom");
+    });
+  });
+
+  //opacity blur
+  $.each(opa_bl, function (i, v) {
+    let val = "." + v;
+
+    $(val).one("inview", function (e) {
+      $(this).addClass("opacity_blur");
+    });
   });
 });

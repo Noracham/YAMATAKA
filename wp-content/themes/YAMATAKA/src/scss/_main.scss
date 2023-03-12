@@ -218,6 +218,9 @@
     @include m.mq(sp) {
       height: 700px;
     }
+    .viewmore {
+      opacity: 0;
+    }
     &_new {
       height: auto;
       position: relative;
@@ -254,6 +257,7 @@
           }
         }
         .news_list {
+          opacity: 0;
           display: flex;
           flex-direction: column;
           padding-top: 75px;
@@ -310,6 +314,7 @@
       flex-direction: column;
     }
     &_map {
+      opacity: 0;
       width: 50%;
       @include m.mq(sp) {
         width: 100%;
@@ -328,6 +333,7 @@
         margin: 3% 0 0 0;
       }
       &_txt {
+        opacity: 0;
         font-size: 1.7rem;
         color: $color-text-green;
         line-height: 3.4rem;

@@ -395,6 +395,7 @@ a {
 }
 /*---------- subtitle ----------*/
 .sub_title {
+  opacity: 0;
   text-align: center;
   position: relative;
   color: $color-text-green;
@@ -516,9 +517,6 @@ a {
   }
 }
 /*---------- inview animation ----------*/
-.animation_opacity {
-  opacity: 0;
-}
 .top_to_bottom {
   animation: top_to_bottom 1s forwards;
   @keyframes top_to_bottom {
@@ -529,6 +527,32 @@ a {
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+}
+.left_to_right {
+  animation: left_to_right 1s forwards;
+  @keyframes left_to_right {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+.opacity_blur {
+  animation: opacity_blur 1s forwards;
+  @keyframes opacity_blur {
+    from {
+      opacity: 0;
+      filter: blur(5px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
     }
   }
 }
