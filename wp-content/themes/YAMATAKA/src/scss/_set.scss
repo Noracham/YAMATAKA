@@ -71,11 +71,11 @@ a {
 /*---------- header ----------*/
 .header {
   z-index: 999999;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0);
   padding: 0 30px;
   width: 100vw;
   height: 70px;
-  box-shadow: #00000041 0 3px 5px;
+  // box-shadow: #00000041 0 3px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,10 +98,18 @@ a {
       top: 0;
       left: 0;
     }
-    img {
+    svg {
       width: auto;
       height: 100%;
       object-fit: contain;
+      g {
+        ellipse {
+          fill: #fff;
+        }
+        text {
+          fill: #fff;
+        }
+      }
     }
   }
   &_nav {
@@ -109,7 +117,8 @@ a {
       display: flex;
       font-size: 1.5rem;
       font-weight: bold;
-      color: $color-text-green;
+      // color: $color-text-green;
+      color: #fff;
       @include m.mq(sp) {
         display: none;
       }
@@ -122,6 +131,9 @@ a {
           @include m.mq(tab) {
             margin-right: 30px;
           }
+        }
+        a {
+          color: #fff;
         }
         &::before {
           position: absolute;

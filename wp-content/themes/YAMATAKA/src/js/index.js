@@ -4,12 +4,21 @@ $(function () {
     $header_place = $(window).scrollTop();
 
     if ($header_place > 0) {
-      $(".header").css({ height: "65px", background: "#fff" });
+      $(".header").css({
+        height: "65px",
+        background: "#fff",
+        "box-shadow": "#00000041 0 3px 5px",
+      });
+      $(".header_nav_list li a").css({ color: "#1b5d00" });
+      $("g ellipse,g text").css({ fill: "#1b5d00" });
     } else {
       $(".header").css({
         height: "70px",
-        background: "rgba(255,255,255,0.75)",
+        background: "rgba(255,255,255,0.00)",
+        "box-shadow": "none",
       });
+      $(".header_nav_list li a").css({ color: "#fff" });
+      $("g ellipse,g text").css({ fill: "#fff" });
     }
   });
   //スマホ用メニュー

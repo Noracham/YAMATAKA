@@ -11,7 +11,21 @@
 
 <body>
     <header class="header">
-        <div class="header_img"><a href="<?php echo esc_url(home_url()); ?>"></a><img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')); ?>" alt="logo"></div>
+        <div class="header_img"><a href="<?php echo esc_url(home_url()); ?>"></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="131" viewBox="0 0 500 131">
+                <g id="ロゴ" transform="translate(-1232 -231)">
+                    <ellipse id="楕円形_2" data-name="楕円形 2" cx="36.5" cy="37" rx="36.5" ry="37" transform="translate(1232 245)" fill="#2c5d10" />
+                    <ellipse id="楕円形_3" data-name="楕円形 3" cx="26.5" cy="26" rx="26.5" ry="26" transform="translate(1269 231)" fill="#2c5d10" />
+                    <ellipse id="楕円形_4" data-name="楕円形 4" cx="244" cy="12.5" rx="244" ry="12.5" transform="translate(1244 337)" fill="#2c5d10" />
+                    <text id="ヤマタカ病院" transform="translate(1341 290)" fill="#2c5d10" font-size="54" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em">
+                        <tspan x="0" y="0">ヤマタカ病院</tspan>
+                    </text>
+                    <text id="YAMATAKA_HOSPITAL" data-name="YAMATAKA HOSPITAL" transform="translate(1405 317)" fill="#2c5d10" font-size="18" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em">
+                        <tspan x="0" y="0">YAMATAKA HOSPITAL</tspan>
+                    </text>
+                </g>
+            </svg>
+        </div>
         <nav class="header_nav">
             <div class="header_nav_sp"><span></span><span></span><span></span></div>
             <ul class="header_nav_list">
