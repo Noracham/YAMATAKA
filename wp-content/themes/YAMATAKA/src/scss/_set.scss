@@ -135,46 +135,33 @@ a {
         a {
           color: #fff;
         }
-        &::before {
-          position: absolute;
-          content: "";
-          bottom: 0;
-          right: 50%;
-          width: 0;
-          height: 2px;
-          background: $color-text-green;
-          transition: all 0.5s;
-        }
-        &:hover::before {
-          width: 50%;
-        }
+        // &::before {
+        //   position: absolute;
+        //   content: "";
+        //   bottom: 0;
+        //   right: 50%;
+        //   width: 0;
+        //   height: 2px;
+        //   background: #fff;
+        //   transition: all 0.5s;
+        // }
+        // &:hover::before {
+        //   width: 50%;
+        // }
 
-        &::after {
-          position: absolute;
-          content: "";
-          bottom: 0;
-          left: 50%;
-          width: 0;
-          height: 2px;
-          background: $color-text-green;
-          transition: all 0.5s;
-        }
-        &:hover::after {
-          width: 50%;
-        }
-        &::before {
-          position: absolute;
-          content: "";
-          bottom: 0;
-          right: 50%;
-          width: 0;
-          height: 2px;
-          background: $color-text-green;
-          transition: all 0.5s;
-        }
-        &:hover::before {
-          width: 50%;
-        }
+        // &::after {
+        //   position: absolute;
+        //   content: "";
+        //   bottom: 0;
+        //   left: 50%;
+        //   width: 0;
+        //   height: 2px;
+        //   background: #fff;
+        //   transition: all 0.5s;
+        // }
+        // &:hover::after {
+        //   width: 50%;
+        // }
       }
     }
     /*---------- ハンバーガー ----------*/
@@ -565,5 +552,62 @@ a {
       opacity: 1;
       filter: blur(0);
     }
+  }
+}
+
+.scroll_link_green {
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background: $color-deep-green;
+    transition: all 0.5s;
+  }
+  &:hover::before {
+    width: 50%;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: $color-deep-green;
+    transition: all 0.5s;
+  }
+  &:hover::after {
+    width: 50%;
+  }
+}
+.scroll_link_white {
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: all 0.5s;
+  }
+  &:hover::before {
+    width: 50%;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: all 0.5s;
+  }
+  &:hover::after {
+    width: 50%;
   }
 }

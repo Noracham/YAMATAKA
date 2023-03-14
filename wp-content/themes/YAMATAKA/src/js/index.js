@@ -10,6 +10,8 @@ $(function () {
         "box-shadow": "#00000041 0 3px 5px",
       });
       $(".header_nav_list li a").css({ color: "#1b5d00" });
+      $(".header_nav_list li a").addClass("scroll_link_green");
+      $(".header_nav_list li a").removeClass("scroll_link_white");
       $("g ellipse,g text").css({ fill: "#1b5d00" });
     } else {
       $(".header").css({
@@ -18,6 +20,8 @@ $(function () {
         "box-shadow": "none",
       });
       $(".header_nav_list li a").css({ color: "#fff" });
+      $(".header_nav_list li a").addClass("scroll_link_white");
+      $(".header_nav_list li a").removeClass("scroll_link_green");
       $("g ellipse,g text").css({ fill: "#fff" });
     }
   });
