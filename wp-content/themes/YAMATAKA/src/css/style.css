@@ -125,19 +125,21 @@ a {
   object-fit: contain;
 }
 .header_img svg g ellipse {
+  transition: all 0.5s;
   fill: #fff;
 }
 .header_img svg g text {
+  transition: all 0.5s;
   fill: #fff;
 }
 .header_nav {
+  /*---------- header用　表示切り替えクラス ----------*/
   /*---------- ハンバーガー ----------*/
 }
 .header_nav_list {
   display: flex;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .header_nav_list {
@@ -158,7 +160,66 @@ a {
   }
 }
 .header_nav_list li a {
+  transition: all 0.5s;
   color: #fff;
+}
+.header_nav .scroll_link_green {
+  transition: all 0.5s;
+}
+.header_nav .scroll_link_green::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 2px;
+  background: #1b5d00;
+  transition: all 0.5s;
+}
+.header_nav .scroll_link_green:hover::before {
+  width: 50%;
+}
+.header_nav .scroll_link_green::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #1b5d00;
+  transition: all 0.5s;
+}
+.header_nav .scroll_link_green:hover::after {
+  width: 50%;
+}
+.header_nav .scroll_link_white {
+  transition: all 0.5s;
+}
+.header_nav .scroll_link_white::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: all 0.5s;
+}
+.header_nav .scroll_link_white:hover::before {
+  width: 50%;
+}
+.header_nav .scroll_link_white::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: all 0.5s;
+}
+.header_nav .scroll_link_white:hover::after {
+  width: 50%;
 }
 .header_nav_sp {
   display: none;
@@ -574,60 +635,6 @@ a {
     opacity: 1;
     filter: blur(0);
   }
-}
-
-.scroll_link_green::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  right: 50%;
-  width: 0;
-  height: 2px;
-  background: #1b5d00;
-  transition: all 0.5s;
-}
-.scroll_link_green:hover::before {
-  width: 50%;
-}
-.scroll_link_green::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: #1b5d00;
-  transition: all 0.5s;
-}
-.scroll_link_green:hover::after {
-  width: 50%;
-}
-
-.scroll_link_white::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  right: 50%;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: all 0.5s;
-}
-.scroll_link_white:hover::before {
-  width: 50%;
-}
-.scroll_link_white::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: all 0.5s;
-}
-.scroll_link_white:hover::after {
-  width: 50%;
 }
 
 /*---------- know ----------*/

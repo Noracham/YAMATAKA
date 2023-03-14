@@ -104,9 +104,11 @@ a {
       object-fit: contain;
       g {
         ellipse {
+          transition: all 0.5s;
           fill: #fff;
         }
         text {
+          transition: all 0.5s;
           fill: #fff;
         }
       }
@@ -117,8 +119,6 @@ a {
       display: flex;
       font-size: 1.5rem;
       font-weight: bold;
-      // color: $color-text-green;
-      color: #fff;
       @include m.mq(sp) {
         display: none;
       }
@@ -133,37 +133,71 @@ a {
           }
         }
         a {
+          transition: all 0.5s;
           color: #fff;
         }
-        // &::before {
-        //   position: absolute;
-        //   content: "";
-        //   bottom: 0;
-        //   right: 50%;
-        //   width: 0;
-        //   height: 2px;
-        //   background: #fff;
-        //   transition: all 0.5s;
-        // }
-        // &:hover::before {
-        //   width: 50%;
-        // }
-
-        // &::after {
-        //   position: absolute;
-        //   content: "";
-        //   bottom: 0;
-        //   left: 50%;
-        //   width: 0;
-        //   height: 2px;
-        //   background: #fff;
-        //   transition: all 0.5s;
-        // }
-        // &:hover::after {
-        //   width: 50%;
-        // }
       }
     }
+    /*---------- header用　表示切り替えクラス ----------*/
+    .scroll_link_green {
+      transition: all 0.5s;
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 50%;
+        width: 0;
+        height: 2px;
+        background: $color-deep-green;
+        transition: all 0.5s;
+      }
+      &:hover::before {
+        width: 50%;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: $color-deep-green;
+        transition: all 0.5s;
+      }
+      &:hover::after {
+        width: 50%;
+      }
+    }
+    .scroll_link_white {
+      transition: all 0.5s;
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 50%;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: all 0.5s;
+      }
+      &:hover::before {
+        width: 50%;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: all 0.5s;
+      }
+      &:hover::after {
+        width: 50%;
+      }
+    }
+
     /*---------- ハンバーガー ----------*/
     &_sp {
       display: none;
@@ -552,62 +586,5 @@ a {
       opacity: 1;
       filter: blur(0);
     }
-  }
-}
-
-.scroll_link_green {
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 50%;
-    width: 0;
-    height: 2px;
-    background: $color-deep-green;
-    transition: all 0.5s;
-  }
-  &:hover::before {
-    width: 50%;
-  }
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: $color-deep-green;
-    transition: all 0.5s;
-  }
-  &:hover::after {
-    width: 50%;
-  }
-}
-.scroll_link_white {
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 50%;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: all 0.5s;
-  }
-  &:hover::before {
-    width: 50%;
-  }
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: all 0.5s;
-  }
-  &:hover::after {
-    width: 50%;
   }
 }
