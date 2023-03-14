@@ -479,7 +479,7 @@ a {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #eafced;
+  background: #fff;
   left: 50%;
   top: -20px;
   z-index: -1;
@@ -609,9 +609,6 @@ a {
   }
 }
 
-.left_to_right {
-  animation: left_to_right 1s forwards;
-}
 @keyframes left_to_right {
   from {
     opacity: 0;
@@ -621,6 +618,13 @@ a {
     opacity: 1;
     transform: translateX(0);
   }
+}
+.left_to_right {
+  animation: left_to_right 1s forwards;
+}
+
+.left_to_right_delay {
+  animation: left_to_right 1s 1.2s forwards;
 }
 
 .opacity_blur {

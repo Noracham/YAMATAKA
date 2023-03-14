@@ -1,8 +1,8 @@
 const $ = jQuery.noConflict();
 $(function () {
+  $header_place = 0;
   $(window).on("load scroll", function () {
     $header_place = $(window).scrollTop();
-
     if ($header_place > 0) {
       $(".header").css({
         height: "65px",
@@ -13,6 +13,8 @@ $(function () {
       $(".header_nav_list li a").addClass("scroll_link_green");
       $(".header_nav_list li a").removeClass("scroll_link_white");
       $("g ellipse,g text").css({ fill: "#1b5d00" });
+
+      $(".header_nav_sp span").css("background", "#1b5b00");
     } else {
       $(".header").css({
         height: "70px",
@@ -23,6 +25,8 @@ $(function () {
       $(".header_nav_list li a").addClass("scroll_link_white");
       $(".header_nav_list li a").removeClass("scroll_link_green");
       $("g ellipse,g text").css({ fill: "#fff" });
+
+      $(".header_nav_sp span").css("background", "#fff");
     }
   });
   //スマホ用メニュー
@@ -33,10 +37,16 @@ $(function () {
       visible = false;
 
       $(".sp_menu").animate({ right: "0" }, 500);
+      $(".header_nav_sp span").css("background", "#fff");
+      $("g ellipse,g text").css({ fill: "#fff" });
     } else {
       $(this).removeClass("menu_visible");
       visible = true;
       $(".sp_menu").animate({ right: "-100vw" }, 500);
+      if ($header_place != 0) {
+        $("g ellipse,g text").css({ fill: "#1b5d00" });
+        $(".header_nav_sp span").css("background", "#1b5b00");
+      }
     }
   });
   $(".trigger").on("click", function () {
@@ -131,10 +141,10 @@ $(function () {
   let LtoR = [
     "news_list",
     "viewmore",
-    "access_content_info_txt",
     "department_content_one",
     "hospital_info_content_arrow div",
   ];
+  let LtoR_delay = ["access_content_info_txt"];
   let TtoB = ["know_content", "departmentM_content", "doctor_content"];
   let opa_bl = ["sub_title", "access_content_map", "circle_wrapper"];
 
@@ -144,6 +154,14 @@ $(function () {
 
     $(val).one("inview", function (e) {
       $(this).addClass("left_to_right");
+    });
+  });
+  //left to right delay
+  $.each(LtoR_delay, function (i, v) {
+    let val = "." + v;
+
+    $(val).one("inview", function (e) {
+      $(this).addClass("left_to_right_delay");
     });
   });
   //top to bottom
